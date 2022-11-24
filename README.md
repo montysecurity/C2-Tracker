@@ -16,13 +16,17 @@ This repo houses the code I made to mine various C2 IPs from Shodan. The searche
 
 ## Current State
 
-This script is automated and will run nightly to update *data/\** so there is no need for you to run it locally.
+I currently have this script running nightly on a crontab and automatically updating the files in `data`. There is a backup of the data in `backup`, this is not touched by the automation and will occassionally be updated manually.
+
+*Last Backup: 11/24/2022*
 
 ### Running Locally
 
-However if you want to host a private version, fill out the API key field on line 5 and run the following, then automate it however you wish (e.g. crontab):
+However if you want to host a private version, put your Shodan API key in an environment variable called `SHODAN_API_KEY`
 
 ```bash
+echo SHODAN_API_KEY=API_KEY >> ~/.bashrc
+bash
 python3 -m pip install -r requirements.txt
 python3 tracker.py
 ```
