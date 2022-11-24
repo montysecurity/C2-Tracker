@@ -1,8 +1,8 @@
-from os import remove
+import os
 from shodan import Shodan
 
 def shodan():
-    api_key = ""
+    api_key = os.environ["SHODAN_API_KEY"].strip()
     api = Shodan(api_key)
     # https://michaelkoczwara.medium.com/hunting-c2-with-shodan-223ca250d06f
     # https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2
@@ -47,7 +47,7 @@ def shodan():
             seen.add(line)
             initial_count += 1
         f.close()
-        remove("data/" + ip_file)
+        os.remove("data/" + ip_file)
         new_count = 0
         f = open("data/" + ip_file, "a")
         for ip in seen:
@@ -63,7 +63,7 @@ def shodan():
         seen.add(line)
         initial_count_all += 1
     a.close()
-    remove("data/all.txt")
+    os.remove("data/all.txt")
     new_count_all = 0
     a = open("data/all.txt", "a")
     for ip in seen:
