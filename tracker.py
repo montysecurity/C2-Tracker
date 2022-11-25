@@ -70,7 +70,7 @@ def shodan():
         a.write(ip)
         new_count_all += 1
     a.close()
-    print(f"Initial Count for all: {initial_count_all}\nNew Count for all: {new_count_all}")
+    print(f"Total Count for all: {initial_count_all}\nUnique Count for all: {new_count_all}")
 
 def main():
     shodan()
