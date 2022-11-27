@@ -1,18 +1,31 @@
 # C2 Tracker
 
-This repo houses the code I made to mine various C2 IPs from Shodan. The searches used were sourced from [Michael Koczwara's Research](https://michaelkoczwara.medium.com/) (see references below).
+This repo houses the code I made to mine various C2/malware IPs from Shodan. The searches used were sourced from [Michael Koczwara's](https://michaelkoczwara.medium.com/) and [@BushidoToken's (Will's)](https://twitter.com/BushidoToken) research (see references below).
 
-# Current Metrics
+## What do I track?
 
-- Suspected C2 Servers: 2,641
-    - Cobalt Strike: 1,757
-    - Metaploit Framework: 603
-    - Covenant: 33
-    - Mythic: 55
-    - Brute Ratel C4: 9
-    - Posh C2: 9
-
-- (Those numbers don't add up so I suspect a few IPs are housing multiple C2s, see future state)
+- C2's
+    - [Cobalt Strike](https://www.cobaltstrike.com/)
+    - [Metasploit Framework](https://www.metasploit.com/)
+    - [Covenant](https://github.com/cobbr/Covenant)
+    - [Mythic](https://github.com/its-a-feature/Mythic)
+    - [Brute Ratel C4](https://bruteratel.com/)
+    - [Posh](https://github.com/nettitude/PoshC2)
+    - [Sliver](https://github.com/BishopFox/sliver)
+    - [Deimos](https://github.com/DeimosC2/DeimosC2)
+    - PANDA
+- Malware
+    - AcidRain Stealer
+    - Misha Stealer (AKA Grand Misha)
+    - Patriot Stealer
+    - RAXNET Bitcoin Stealer
+    - Titan Stealer
+    - Collector Stealer
+- Tools
+    - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
+    - [BurpSuite](https://portswigger.net/burp)
+    - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit)
+    - [XMRig Monero Cryptominer](https://xmrig.com/)
 
 ## Current State
 
@@ -43,3 +56,4 @@ python3 tracker.py
 - [Hunting C2 with Shodan by Michael Koczwara](https://michaelkoczwara.medium.com/hunting-c2-with-shodan-223ca250d06f)
 - [Hunting Cobalt Strike C2 with Shodan by Michael Koczwara](https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2)
 - [This tweet](https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA)
+- BushidoToken's [OSINT-SearchOperators](https://github.com/BushidoUK/OSINT-SearchOperators/blob/main/ShodanAdversaryInfa.md)
