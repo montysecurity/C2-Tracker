@@ -34,14 +34,14 @@ def shodan():
             "http.html_hash:-1957161625",
             "product:'Brute Ratel C4'"
             ],
-        "Posh": [ "ssl:P18055077" ],
-        "Sliver": [
+        "Posh C2": [ "ssl:P18055077" ],
+        "Sliver C2": [
             "ssl:multiplayer ssl:operators",
             "http.html:sliver-client",
             '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"'
             ],
-        "Deimos": [ "http.html_hash:-14029177" ],
-        "PANDA":  [ 'http.html:"PANDA" http.html:"layui"' ],
+        "Deimos C2": [ "http.html_hash:-14029177" ],
+        "PANDA C2":  [ 'http.html:"PANDA" http.html:"layui"' ],
         "AcidRain Stealer": [ 'http.html:"AcridRain Stealer"' ],
         "Misha Stealer": [ 'http.title:"misha" http.component:"UIKit"'],
         "Patriot Stealer": [
