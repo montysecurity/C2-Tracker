@@ -68,7 +68,7 @@ def shodan():
         ip_file = f"{product} IPs.txt"
         f = open("data/" + ip_file, "a")
         for query in queries[product]:
-            print(f"Search Product: {product}, Query: {query}")
+            print(f"Product: {product}, Query: {query}")
             for i in range(1, 100):
                 print(f"- Parsing Page: {i}")
                 results = api.search(query, page=i)
