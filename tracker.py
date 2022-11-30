@@ -63,15 +63,24 @@ def shodan():
             "http.favicon.hash:1088998712"
         ]
     }
-    a = open("data/all.txt", "a")
+
+    # https://www.techiedelight.com/delete-all-files-directory-python/
+    dir_to_clean = "data"
+    for file in os.scandir(dir_to_clean):
+        os.remove(file.path)
+
+    ip_set_from_all_products = set()
+    count_of_all_ips = 0
+    count_of_products = 0
     for product in queries:
-        ip_file = f"{product} IPs.txt"
-        f = open("data/" + ip_file, "a")
+        count_of_products += 1
+        count_of_product_ips = 0
+        ip_set_from_product = set()
         for query in queries[product]:
             print(f"Product: {product}, Query: {query}")
-            for i in range(1, 100):
-                print(f"- Parsing Page: {i}")
-                results = api.search(query, page=i)
+            for page_number in range(1, 9001):
+                print(f"- Parsing Page: {page_number}")
+                results = api.search(query, page=page_number)
                 number_of_results = len(results["matches"])
                 if number_of_results == 0:
                     print("- Reached last page\n")
@@ -79,40 +88,28 @@ def shodan():
                 elif number_of_results > 0:
                     for service in results["matches"]:
                         ip = str(service["ip_str"])
-                        f.write(ip + "\n")
-                        a.write(ip + "\n")
-        seen = set()
-        f.close()
-        f = open("data/" + ip_file, "r")
-        initial_count = 0
-        for line in f:
-            seen.add(line)
-            initial_count += 1
-        f.close()
-        os.remove("data/" + ip_file)
-        new_count = 0
-        f = open("data/" + ip_file, "a")
-        for ip in seen:
-            new_count += 1
-            f.write(ip)
-        f.close()
-        print(f"Total Count for {product}: {initial_count}\nUnique Count for {product}: {new_count}\n\n")
-    seen = set()
-    a.close()
-    initial_count_all = 0
-    a = open("data/all.txt", "r")
-    for line in a:
-        seen.add(line)
-        initial_count_all += 1
-    a.close()
-    os.remove("data/all.txt")
-    new_count_all = 0
-    a = open("data/all.txt", "a")
-    for ip in seen:
-        a.write(ip)
-        new_count_all += 1
-    a.close()
-    print(f"Total Count for all: {initial_count_all}\nUnique Count for all: {new_count_all}")
+                        ip_set_from_product.add(ip)
+                        ip_set_from_all_products.add(ip)
+        product_ips_file = open(f"data/{product} IPs.txt", "a")
+        for ip in ip_set_from_product:
+            product_ips_file.write(f"{ip}\n")
+            count_of_product_ips += 1
+        print(f"- Created data/{product} IPs.txt")
+        if count_of_product_ips == 1:
+            print(f"- Documented {count_of_product_ips} IP address\n\n")
+        elif count_of_product_ips > 1:
+            print(f"- Documented {count_of_product_ips} unique IP addresses\n\n")
+
+    all_ips_file = open("data/all.txt", "a")
+    for ip in ip_set_from_all_products:
+        all_ips_file.write(f"{ip}\n")
+        count_of_all_ips += 1
+    print("\n- Created data/all.txt")
+    print(f"- Searched for {count_of_products} different tools/malware")
+    if count_of_all_ips == 1:
+        print(f"- Documented {count_of_all_ips} IP address")
+    elif count_of_all_ips > 1:
+        print(f"- Documented {count_of_all_ips} unique IP addresses")
 
 def main():
     shodan()
