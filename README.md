@@ -26,6 +26,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. The
     - [BurpSuite](https://portswigger.net/burp)
     - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit)
     - [XMRig Monero Cryptominer](https://xmrig.com/)
+    - [GoPhish](https://getgophish.com/)
 
 ## Current State
 

@@ -42,6 +42,10 @@ def shodan():
             ],
         "Deimos C2": [ "http.html_hash:-14029177" ],
         "PANDA C2":  [ 'http.html:"PANDA" http.html:"layui"' ],
+        "GoPhish": [
+            "http.html:'Gophish - Login'",
+            "http.favicon.hash:803527991"
+        ],
         "AcidRain Stealer": [ 'http.html:"AcridRain Stealer"' ],
         "Misha Stealer": [ 'http.title:"misha" http.component:"UIKit"'],
         "Patriot Stealer": [
