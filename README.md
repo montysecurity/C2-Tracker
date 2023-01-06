@@ -32,7 +32,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. The
 
 I currently have this script running nightly on a crontab and automatically updating the files in `data`. There is a backup of the data in `backup`, this is not touched by the automation and will occassionally be updated manually.
 
-*Last Backup: 11/30/2022*
+*Last Backup: 1/6/2023*
 
 ### Running Locally
 
