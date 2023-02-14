@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from shodan import Shodan
 
 def shodan():
@@ -108,6 +109,7 @@ def shodan():
         print(f"- Documented {count_of_all_ips} unique IP addresses")
 
 def main():
+    load_dotenv()
     shodan()
 
 if __name__ == '__main__':
