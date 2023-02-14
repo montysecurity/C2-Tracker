@@ -82,18 +82,10 @@ def shodan():
         ip_set_from_product = set()
         for query in queries[product]:
             print(f"Product: {product}, Query: {query}")
-            for page_number in range(1, 9001):
-                print(f"- Parsing Page: {page_number}")
-                results = api.search(query, page=page_number)
-                number_of_results = len(results["matches"])
-                if number_of_results == 0:
-                    print("- Reached last page\n")
-                    break
-                elif number_of_results > 0:
-                    for service in results["matches"]:
-                        ip = str(service["ip_str"])
-                        ip_set_from_product.add(ip)
-                        ip_set_from_all_products.add(ip)
+            for result in api.search_cursor(query):
+                ip = str(result["ip_str"])
+                ip_set_from_product.add(ip)
+                ip_set_from_all_products.add(ip)
         product_ips_file = open(f"data/{product} IPs.txt", "a")
         for ip in ip_set_from_product:
             product_ips_file.write(f"{ip}\n")
@@ -118,4 +110,5 @@ def shodan():
 def main():
     shodan()
 
-main()
+if __name__ == '__main__':
+    main()
