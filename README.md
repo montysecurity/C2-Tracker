@@ -14,6 +14,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. The
     - [Sliver](https://github.com/BishopFox/sliver)
     - [Deimos](https://github.com/DeimosC2/DeimosC2)
     - PANDA
+    - [NimPlant C2](https://github.com/chvancooten/NimPlant)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
