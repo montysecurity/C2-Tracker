@@ -50,7 +50,7 @@ def shodan():
             "http.html:'Gophish - Login'",
             "http.favicon.hash:803527991"
         ],
-        "AcidRain Stealer": [ 'http.html:"AcridRain Stealer"' ],
+        "AcidRain Stealer": [ 'http.html:"AcidRain Stealer"' ],
         "Misha Stealer": [ "http.title:misha http.component:UIKit" ],
         "Patriot Stealer": [
             "http.favicon.hash:274603478",
