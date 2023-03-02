@@ -14,8 +14,7 @@ def shodan():
             "hash:-2007783223 port:50050",
             "ssl.jarm:07d14d16d21d21d00042d41d00041de5fb3038104f457d92ba02e9311512c2",
             "ssl.jarm:07d14d16d21d21d07c42d41d00041d24a458a375eef0c576d23a7bab9a9fb1+port:443",
-            "product:'Cobalt Strike Beacon'",
-            "http.html:'cs4.4'"
+            "product:'Cobalt Strike Beacon'"
             ],
         "Metasploit Framework C2": [
             "ssl:MetasploitSelfSignedCA",
@@ -94,26 +93,28 @@ def shodan():
                         ip = str(service["ip_str"])
                         ip_set_from_product.add(ip)
                         ip_set_from_all_products.add(ip)
-        product_ips_file = open(f"data/{product} IPs.txt", "a")
-        for ip in ip_set_from_product:
-            product_ips_file.write(f"{ip}\n")
-            count_of_product_ips += 1
-        print(f"- Created data/{product} IPs.txt")
-        if count_of_product_ips == 1:
-            print(f"- Documented {count_of_product_ips} IP address\n\n")
-        elif count_of_product_ips > 1:
-            print(f"- Documented {count_of_product_ips} unique IP addresses\n\n")
-
-    all_ips_file = open("data/all.txt", "a")
-    for ip in ip_set_from_all_products:
-        all_ips_file.write(f"{ip}\n")
-        count_of_all_ips += 1
-    print("\n- Created data/all.txt")
-    print(f"- Searched for {count_of_products} different tools/malware")
-    if count_of_all_ips == 1:
-        print(f"- Documented {count_of_all_ips} IP address")
-    elif count_of_all_ips > 1:
-        print(f"- Documented {count_of_all_ips} unique IP addresses")
+        if len(ip_set_from_product) > 0:
+            product_ips_file = open(f"data/{product} IPs.txt", "a")
+            for ip in ip_set_from_product:
+                product_ips_file.write(f"{ip}\n")
+                count_of_product_ips += 1
+            print(f"- Created data/{product} IPs.txt")
+            if count_of_product_ips == 1:
+                print(f"- Documented {count_of_product_ips} IP address\n\n")
+            elif count_of_product_ips > 1:
+                print(f"- Documented {count_of_product_ips} unique IP addresses\n\n")
+    
+    if len(ip_set_from_all_products) > 0:
+        all_ips_file = open("data/all.txt", "a")
+        for ip in ip_set_from_all_products:
+            all_ips_file.write(f"{ip}\n")
+            count_of_all_ips += 1
+        print("\n- Created data/all.txt")
+        print(f"- Searched for {count_of_products} different tools/malware")
+        if count_of_all_ips == 1:
+            print(f"- Documented {count_of_all_ips} IP address")
+        elif count_of_all_ips > 1:
+            print(f"- Documented {count_of_all_ips} unique IP addresses")
 
 def main():
     shodan()
