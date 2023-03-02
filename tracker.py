@@ -14,7 +14,8 @@ def shodan():
             "hash:-2007783223 port:50050",
             "ssl.jarm:07d14d16d21d21d00042d41d00041de5fb3038104f457d92ba02e9311512c2",
             "ssl.jarm:07d14d16d21d21d07c42d41d00041d24a458a375eef0c576d23a7bab9a9fb1+port:443",
-            "product:'Cobalt Strike Beacon'"
+            "product:'Cobalt Strike Beacon'",
+            "http.html:cs4.4"
             ],
         "Metasploit Framework C2": [
             "ssl:MetasploitSelfSignedCA",
@@ -40,23 +41,27 @@ def shodan():
             '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"'
             ],
         "Deimos C2": [ "http.html_hash:-14029177" ],
-        "PANDA C2":  [ 'http.html:"PANDA" http.html:"layui"' ],
+        "PANDA C2":  [ "http.html:PANDA http.html:layui" ],
+        "NimPlant C2" : [
+            "Nimplant C2 Server",
+            "http.html_hash:-1258014549"
+            ],
         "GoPhish": [
             "http.html:'Gophish - Login'",
             "http.favicon.hash:803527991"
         ],
         "AcidRain Stealer": [ 'http.html:"AcridRain Stealer"' ],
-        "Misha Stealer": [ 'http.title:"misha" http.component:"UIKit"'],
+        "Misha Stealer": [ "http.title:misha http.component:UIKit" ],
         "Patriot Stealer": [
             "http.favicon.hash:274603478",
-            "http.html:'patriotstealer'"
+            "http.html:patriotstealer"
             ],
         "RAXNET Bitcoin Stealer": [ "http.favicon.hash:-1236243965" ],
         "Titan Stealer": [ 'http.html:"Titan Stealer"' ],
         "Hachcat Cracking Tool": [ "http.html:hashcat"],
         "Collector Stealer": [
             'http.html:"Collector Stealer"',
-            'http.html:"getmineteam"'
+            'http.html:getmineteam'
             ],
         "BurpSuite": [ "http.html:BurpSuite" ],
         "PowerSploit" : [ "http.html:PowerSploit" ],
