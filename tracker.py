@@ -13,7 +13,6 @@ def shodan():
             "ssl.cert.serial:146473198",
             "hash:-2007783223 port:50050",
             "ssl.jarm:07d14d16d21d21d00042d41d00041de5fb3038104f457d92ba02e9311512c2",
-            "ssl.jarm:07d14d16d21d21d07c42d41d00041d24a458a375eef0c576d23a7bab9a9fb1+port:443",
             "product:'Cobalt Strike Beacon'",
             "http.html:cs4.4"
             ],
