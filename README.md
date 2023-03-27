@@ -1,6 +1,6 @@
 # C2 Tracker
 
-This repo houses the code I made to mine various C2/malware IPs from Shodan. The searches used were sourced from [Michael Koczwara's](https://michaelkoczwara.medium.com/) and [@BushidoToken's (Will's)](https://twitter.com/BushidoToken) research (see references below). Huge thanks to the both of them!
+This repo houses the code I made to mine various C2/malware IPs from Shodan. Most of the searches used were sourced from [Michael Koczwara's](https://michaelkoczwara.medium.com/) and [@BushidoToken's (Will's)](https://twitter.com/BushidoToken) research (see references below). Huge thanks to the both of them!
 
 ## What do I track?
 
@@ -14,6 +14,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. The
     - [Sliver](https://github.com/BishopFox/sliver)
     - [Deimos](https://github.com/DeimosC2/DeimosC2)
     - PANDA
+    - [NimPlant C2](https://github.com/chvancooten/NimPlant)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
