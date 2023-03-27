@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from shodan import Shodan
 
 def shodan():
@@ -83,44 +84,36 @@ def shodan():
         count_of_products += 1
         count_of_product_ips = 0
         ip_set_from_product = set()
+        product_ips_file = open(f"data/{product} IPs.txt", "a")
         for query in queries[product]:
             print(f"Product: {product}, Query: {query}")
-            for page_number in range(1, 9001):
-                print(f"- Parsing Page: {page_number}")
-                results = api.search(query, page=page_number)
-                number_of_results = len(results["matches"])
-                if number_of_results == 0:
-                    print("- Reached last page\n")
-                    break
-                elif number_of_results > 0:
-                    for service in results["matches"]:
-                        ip = str(service["ip_str"])
-                        ip_set_from_product.add(ip)
-                        ip_set_from_all_products.add(ip)
-        if len(ip_set_from_product) > 0:
-            product_ips_file = open(f"data/{product} IPs.txt", "a")
-            for ip in ip_set_from_product:
-                product_ips_file.write(f"{ip}\n")
-                count_of_product_ips += 1
-            print(f"- Created data/{product} IPs.txt")
-            if count_of_product_ips == 1:
-                print(f"- Documented {count_of_product_ips} IP address\n\n")
-            elif count_of_product_ips > 1:
-                print(f"- Documented {count_of_product_ips} unique IP addresses\n\n")
-    
-    if len(ip_set_from_all_products) > 0:
-        all_ips_file = open("data/all.txt", "a")
-        for ip in ip_set_from_all_products:
-            all_ips_file.write(f"{ip}\n")
-            count_of_all_ips += 1
-        print("\n- Created data/all.txt")
-        print(f"- Searched for {count_of_products} different tools/malware")
-        if count_of_all_ips == 1:
-            print(f"- Documented {count_of_all_ips} IP address")
-        elif count_of_all_ips > 1:
-            print(f"- Documented {count_of_all_ips} unique IP addresses")
+            for result in api.search_cursor(query):
+                ip = str(result["ip_str"])
+                ip_set_from_product.add(ip)
+                ip_set_from_all_products.add(ip)
+        for ip in ip_set_from_product:
+            product_ips_file.write(f"{ip}\n")
+            count_of_product_ips += 1
+        print(f"- Created data/{product} IPs.txt")
+        if count_of_product_ips == 1:
+            print(f"- Documented {count_of_product_ips} IP address\n\n")
+        elif count_of_product_ips > 1:
+            print(f"- Documented {count_of_product_ips} unique IP addresses\n\n")
+
+    all_ips_file = open("data/all.txt", "a")
+    for ip in ip_set_from_all_products:
+        all_ips_file.write(f"{ip}\n")
+        count_of_all_ips += 1
+    print("\n- Created data/all.txt")
+    print(f"- Searched for {count_of_products} different tools/malware")
+    if count_of_all_ips == 1:
+        print(f"- Documented {count_of_all_ips} IP address")
+    elif count_of_all_ips > 1:
+        print(f"- Documented {count_of_all_ips} unique IP addresses")
 
 def main():
+    load_dotenv()
     shodan()
 
-main()
+if __name__ == '__main__':
+    main()
