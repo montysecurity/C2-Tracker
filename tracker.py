@@ -47,7 +47,7 @@ def shodan():
             "Nimplant C2 Server",
             "http.html_hash:-1258014549"
             ],
-        "Havoc C2": [ "ssl:postalCode=3540 ssl.jarm:3fd21b20d00000021c43d21b21b43de0a012c76cf078b8d06f4620c2286f5e"
+        "Havoc C2": [ "ssl:postalCode=3540 ssl.jarm:3fd21b20d00000021c43d21b21b43de0a012c76cf078b8d06f4620c2286f5e" ],
         "GoPhish": [
             "http.html:'Gophish - Login'",
             "http.favicon.hash:803527991"
