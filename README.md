@@ -15,6 +15,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. Mos
     - [Deimos](https://github.com/DeimosC2/DeimosC2)
     - PANDA
     - [NimPlant C2](https://github.com/chvancooten/NimPlant)
+    - [Havoc C2](https://github.com/HavocFramework/Havoc)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -59,3 +60,4 @@ python3 tracker.py
 - [Hunting Cobalt Strike C2 with Shodan by Michael Koczwara](https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2)
 - [This tweet](https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA)
 - BushidoToken's [OSINT-SearchOperators](https://github.com/BushidoUK/OSINT-SearchOperators/blob/main/ShodanAdversaryInfa.md)
+- [This tweet](https://twitter.com/MichalKoczwara/status/1641119242618650653)
