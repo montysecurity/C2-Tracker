@@ -61,3 +61,4 @@ python3 tracker.py
 - [This tweet](https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA)
 - BushidoToken's [OSINT-SearchOperators](https://github.com/BushidoUK/OSINT-SearchOperators/blob/main/ShodanAdversaryInfa.md)
 - [This tweet](https://twitter.com/MichalKoczwara/status/1641119242618650653)
+- [This tweet](https://twitter.com/MichalKoczwara/status/1641676761283850241)

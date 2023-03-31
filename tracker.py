@@ -10,13 +10,15 @@ def shodan():
     # https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA
     # https://github.com/BushidoUK/OSINT-SearchOperators/blob/main/ShodanAdversaryInfa.md
     # https://twitter.com/MichalKoczwara/status/1641119242618650653
+    # https://twitter.com/MichalKoczwara/status/1641676761283850241
     queries = {
         "Cobalt Strike C2": [
             "ssl.cert.serial:146473198",
             "hash:-2007783223 port:50050",
             "ssl.jarm:07d14d16d21d21d00042d41d00041de5fb3038104f457d92ba02e9311512c2",
             "product:'Cobalt Strike Beacon'",
-            "http.html:cs4.4"
+            "http.html:cs4.4",
+            "ssl:foren.zik"
             ],
         "Metasploit Framework C2": [
             "ssl:MetasploitSelfSignedCA",
