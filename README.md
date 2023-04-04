@@ -23,6 +23,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. Mos
     - RAXNET Bitcoin Stealer
     - Titan Stealer
     - Collector Stealer
+    - Mystic Stealer
 - Tools
     - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
     - [BurpSuite](https://portswigger.net/burp)
@@ -62,3 +63,4 @@ python3 tracker.py
 - BushidoToken's [OSINT-SearchOperators](https://github.com/BushidoUK/OSINT-SearchOperators/blob/main/ShodanAdversaryInfa.md)
 - [This tweet](https://twitter.com/MichalKoczwara/status/1641119242618650653)
 - [This tweet](https://twitter.com/MichalKoczwara/status/1641676761283850241)
+- [This tweet](https://twitter.com/_montysecurity/status/1643164749599834112)

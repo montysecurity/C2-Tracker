@@ -59,14 +59,19 @@ def shodan():
         "Patriot Stealer": [
             "http.favicon.hash:274603478",
             "http.html:patriotstealer"
-            ],
+        ],
         "RAXNET Bitcoin Stealer": [ "http.favicon.hash:-1236243965" ],
         "Titan Stealer": [ 'http.html:"Titan Stealer"' ],
         "Hachcat Cracking Tool": [ "http.html:hashcat"],
         "Collector Stealer": [
             'http.html:"Collector Stealer"',
             'http.html:getmineteam'
-            ],
+        ],
+        "Mystic Stealer": [
+            "http.html_hash:-1773932172",
+            "http.title:'Mystic Stealer -  Login'",
+            "http.favicon.hash:-442056565"
+        ],
         "BurpSuite": [ "http.html:BurpSuite" ],
         "PowerSploit" : [ "http.html:PowerSploit" ],
         "XMRig Monero Cryptominer": [
