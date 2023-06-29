@@ -68,8 +68,7 @@ def shodan():
             'http.html:getmineteam'
         ],
         "Mystic Stealer": [
-            "http.html_hash:-1773932172",
-            "http.title:'Mystic Stealer -  Login'",
+            "http.title:'Mystic Stealer v1.2 -  Login'",
             "http.favicon.hash:-442056565"
         ],
         "BurpSuite": [ "http.html:BurpSuite" ],
