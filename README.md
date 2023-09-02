@@ -30,6 +30,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. Mos
     - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit)
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
+    - [Evileginx 2](https://github.com/kgretzky/evilginx2)
 
 ## Current State
 
