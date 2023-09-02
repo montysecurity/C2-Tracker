@@ -71,6 +71,7 @@ def shodan():
             "http.title:'Mystic Stealer v1.2 -  Login'",
             "http.favicon.hash:-442056565"
         ],
+        "Evileginx 2": [ "ssl.jarm:20d14d20d21d20d20c20d14d20d20daddf8a68a1444c74b6dbe09910a511e6" ],
         "BurpSuite": [ "http.html:BurpSuite" ],
         "PowerSploit" : [ "http.html:PowerSploit" ],
         "XMRig Monero Cryptominer": [
