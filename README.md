@@ -24,6 +24,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. Mos
     - Titan Stealer
     - Collector Stealer
     - Mystic Stealer
+    - [Gotham Stealer](https://twitter.com/FalconFeedsio/status/1705765083429863720)
 - Tools
     - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
     - [BurpSuite](https://portswigger.net/burp)

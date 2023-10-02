@@ -71,6 +71,10 @@ def shodan():
             "http.title:'Mystic Stealer v1.2 -  Login'",
             "http.favicon.hash:-442056565"
         ],
+        "Gotham Stealer": [
+            "http.title:'Gotham Stealer'",
+            "http.favicon.hash:-1651875345"
+        ],
         "BurpSuite": [ "http.html:BurpSuite" ],
         "PowerSploit" : [ "http.html:PowerSploit" ],
         "XMRig Monero Cryptominer": [
