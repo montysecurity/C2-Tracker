@@ -17,13 +17,11 @@ def shodan():
             "hash:-2007783223 port:50050",
             "ssl.jarm:07d14d16d21d21d00042d41d00041de5fb3038104f457d92ba02e9311512c2",
             "product:'Cobalt Strike Beacon'",
-            "http.html:cs4.4",
             "ssl:foren.zik"
             ],
         "Metasploit Framework C2": [
             "ssl:MetasploitSelfSignedCA",
             "http.favicon.hash:-127886975",
-            "http.html:msf4"
             ],
         "Covenant C2": [
             "ssl:Covenant http.component:Blazor",
@@ -68,7 +66,7 @@ def shodan():
             'http.html:getmineteam'
         ],
         "Mystic Stealer": [
-            "http.title:'Mystic Stealer v1.2 -  Login'",
+            "http.title:'Mystic Stealer'",
             "http.favicon.hash:-442056565"
         ],
         "Gotham Stealer": [

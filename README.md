@@ -1,6 +1,8 @@
 # C2 Tracker
 
-This repo houses the code I made to mine various C2/malware IPs from Shodan. Most of the searches used were sourced from [Michael Koczwara's](https://michaelkoczwara.medium.com/) and [@BushidoToken's (Will's)](https://twitter.com/BushidoToken) research (see references below). Huge thanks to the both of them!
+This repo houses the code I made to mine various C2/malware IPs from Shodan. Most of the searches used were sourced from [Michael Koczwara's](https://michaelkoczwara.medium.com/),  [@BushidoToken's (Will's)](https://twitter.com/BushidoToken) research (see references below). Huge thanks to the both of them!
+
+The rest of the searches are created by [me](https://twitter.com/_montysecurity).
 
 ## What do I track?
 
@@ -23,7 +25,7 @@ This repo houses the code I made to mine various C2/malware IPs from Shodan. Mos
     - RAXNET Bitcoin Stealer
     - Titan Stealer
     - Collector Stealer
-    - Mystic Stealer
+    - [Mystic Stealer](https://twitter.com/_montysecurity/status/1643164749599834112)
     - [Gotham Stealer](https://twitter.com/FalconFeedsio/status/1705765083429863720)
 - Tools
     - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
