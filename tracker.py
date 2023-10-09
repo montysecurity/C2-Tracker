@@ -25,7 +25,8 @@ def shodan():
             ],
         "Covenant C2": [
             "ssl:Covenant http.component:Blazor",
-            "http.favicon.hash:-737603591"
+            "http.favicon.hash:-737603591",
+            "product:Covenant"
             ],
         "Mythic C2": [
             "ssl:Mythic port:7443",
@@ -35,22 +36,26 @@ def shodan():
             "http.html_hash:-1957161625",
             "product:'Brute Ratel C4'"
             ],
-        "Posh C2": [ "ssl:P18055077" ],
+        "Posh C2": [ 
+            "ssl:P18055077",
+             "product:PoshC2"
+             ],
         "Sliver C2": [
             "ssl:multiplayer ssl:operators",
-            "http.html:sliver-client",
             '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"'
             ],
-        "Deimos C2": [ "http.html_hash:-14029177" ],
+        "Deimos C2": [
+            "http.html_hash:-14029177",
+            "product:'Deimos C2'",
+            "http.title:'Deimos C2'"
+            ],
         "PANDA C2":  [ "http.html:PANDA http.html:layui" ],
         "NimPlant C2" : [
-            "Nimplant C2 Server",
             "http.html_hash:-1258014549"
             ],
-        "Havoc C2": [ "ssl:postalCode=3540 ssl.jarm:3fd21b20d00000021c43d21b21b43de0a012c76cf078b8d06f4620c2286f5e" ],
+        "Havoc C2": [ "X-Havoc: true" ],
         "GoPhish": [
-            "http.html:'Gophish - Login'",
-            "http.favicon.hash:803527991"
+            "http.title:'Gophish - Login'",
         ],
         "AcidRain Stealer": [ 'http.html:"AcidRain Stealer"' ],
         "Misha Stealer": [ "http.title:misha http.component:UIKit" ],
