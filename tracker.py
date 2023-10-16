@@ -54,6 +54,12 @@ def shodan():
             "http.html_hash:-1258014549"
             ],
         "Havoc C2": [ "X-Havoc: true" ],
+        # https://twitter.com/ViriBack/status/1713714868564394336
+        "Caldera C2": [
+            "http.favicon.hash:-636718605",
+            "http.html_hash:-1702274888",
+            'http.title:"Login | CALDERA"'
+        ],
         "GoPhish": [
             "http.title:'Gophish - Login'",
         ],

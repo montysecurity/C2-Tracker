@@ -18,6 +18,7 @@ The rest of the searches are created by [me](https://twitter.com/_montysecurity)
     - PANDA
     - [NimPlant C2](https://github.com/chvancooten/NimPlant)
     - [Havoc C2](https://github.com/HavocFramework/Havoc)
+    - [Caldera](https://caldera.mitre.org/)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -62,8 +63,9 @@ python3 tracker.py
 
 - [Hunting C2 with Shodan by Michael Koczwara](https://michaelkoczwara.medium.com/hunting-c2-with-shodan-223ca250d06f)
 - [Hunting Cobalt Strike C2 with Shodan by Michael Koczwara](https://michaelkoczwara.medium.com/cobalt-strike-c2-hunting-with-shodan-c448d501a6e2)
-- [This tweet](https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA)
+- [https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA](https://twitter.com/MichalKoczwara/status/1591750513238118401?cxt=HHwWgsDUiZGqhJcsAAAA)
 - BushidoToken's [OSINT-SearchOperators](https://github.com/BushidoUK/OSINT-SearchOperators/blob/main/ShodanAdversaryInfa.md)
-- [This tweet](https://twitter.com/MichalKoczwara/status/1641119242618650653)
-- [This tweet](https://twitter.com/MichalKoczwara/status/1641676761283850241)
-- [This tweet](https://twitter.com/_montysecurity/status/1643164749599834112)
+- [https://twitter.com/MichalKoczwara/status/1641119242618650653](https://twitter.com/MichalKoczwara/status/1641119242618650653)
+- [https://twitter.com/MichalKoczwara/status/1641676761283850241](https://twitter.com/MichalKoczwara/status/1641676761283850241)
+- [https://twitter.com/_montysecurity/status/1643164749599834112](https://twitter.com/_montysecurity/status/1643164749599834112)
+- [https://twitter.com/ViriBack/status/1713714868564394336](https://twitter.com/ViriBack/status/1713714868564394336)
