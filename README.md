@@ -1,6 +1,6 @@
 # C2 Tracker
 
-Free to use IOC feed for various tools/malware. Uses [Shodan][https://www.shodan.io/] searches to collect the IPs. The most recent collection is always stored in `data`; the IPs are broken down by tool and there is an `all.txt`.
+Free to use IOC feed for various tools/malware. Uses [Shodan](https://www.shodan.io/) searches to collect the IPs. The most recent collection is always stored in `data`; the IPs are broken down by tool and there is an `all.txt`.
 
 The feed should update daily. *Actively working on making the backend more reliable*
 
