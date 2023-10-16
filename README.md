@@ -8,7 +8,7 @@ The feed should update daily. *Actively working on making the backend more relia
 
 Many of the Shodan queries have been sourced from other CTI researchers:
 
-- [BushidoToken]https://twitter.com/BushidoToken
+- [BushidoToken](https://twitter.com/BushidoToken)
 - [Michael Koczwara](https://twitter.com/MichalKoczwara)
 - [ViriBack](https://twitter.com/ViriBack)
 
