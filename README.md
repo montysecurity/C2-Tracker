@@ -1,8 +1,22 @@
 # C2 Tracker
 
-This repo houses the code I made to mine various C2/malware IPs from Shodan. Most of the searches used were sourced from [Michael Koczwara's](https://michaelkoczwara.medium.com/),  [@BushidoToken's (Will's)](https://twitter.com/BushidoToken) research (see references below). Huge thanks to the both of them!
+Free to use IOC feed for various tools/malware. Uses [Shodan][https://www.shodan.io/] searches to collect the IPs. The most recent collection is always stored in `data`; the IPs are broken down by tool and there is an `all.txt`.
 
-The rest of the searches are created by [me](https://twitter.com/_montysecurity).
+The feed should update daily. *Actively working on making the backend more reliable*
+
+## Honorable Mentions
+
+Many of the Shodan queries have been sourced from other CTI researchers:
+
+- [BushidoToken]https://twitter.com/BushidoToken
+- [Michael Koczwara](https://twitter.com/MichalKoczwara)
+- [ViriBack](https://twitter.com/ViriBack)
+
+Huge shoutout to them!
+
+Thanks to [BertJanCyber] for creating the [KQL query](https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules/blob/main/Threat%20Hunting/TI%20Feed%20-%20MontySecurity%20C2%20Tracker%20All%20IPs.md) for ingesting this feed
+
+And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Live](https://github.com/YoNixNeXRo/C2Live) in order to visualize the data
 
 ## What do I track?
 
@@ -35,15 +49,9 @@ The rest of the searches are created by [me](https://twitter.com/_montysecurity)
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
 
-## Current State
-
-I currently have this script running nightly on a crontab and automatically updating the files in `data`. There is a backup of the data in `backup`, this is not touched by the automation and will occassionally be updated manually.
-
-*Last Backup: 1/6/2023*
-
 ### Running Locally
 
-However if you want to host a private version, put your Shodan API key in an environment variable called `SHODAN_API_KEY`
+If you want to host a private version, put your Shodan API key in an environment variable called `SHODAN_API_KEY`
 
 ```bash
 echo SHODAN_API_KEY=API_KEY >> ~/.bashrc
@@ -51,13 +59,6 @@ bash
 python3 -m pip install -r requirements.txt
 python3 tracker.py
 ```
-
-## Future State
-
-- Write scripts to analyze DNS/WHOIS info
-- Build automation into the script
-- Write script to identify servers with multiple frameworks running
-- Track metrics over time
 
 ## References
 
