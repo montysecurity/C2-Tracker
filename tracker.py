@@ -116,6 +116,7 @@ def shodan():
             try:
                 results = api.search_cursor(query)
             except:
+                print("Could not retrieve results..restarting")
                 main()
             for result in results:
                 ip = str(result["ip_str"])
