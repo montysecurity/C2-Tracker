@@ -108,7 +108,12 @@ def shodan():
         product_ips_file = open(f"data/{product} IPs.txt", "a")
         for query in queries[product]:
             print(f"Product: {product}, Query: {query}")
-            for result in api.search_cursor(query):
+            # Catch Shodan Query Errors and restart the script
+            try:
+                results = api.search_cursor(query)
+            except:
+                main()
+            for result in results:
                 ip = str(result["ip_str"])
                 ip_set_from_product.add(ip)
                 ip_set_from_all_products.add(ip)
