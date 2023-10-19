@@ -90,6 +90,10 @@ def shodan():
             "http.html:XMRig",
             "http.favicon.hash:-782317534",
             "http.favicon.hash:1088998712"
+        ],
+        # https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd
+        "777 Botnet": [
+            "hash:1357418825"
         ]
     }
 

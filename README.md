@@ -1,6 +1,6 @@
 # C2 Tracker
 
-Free to use IOC feed for various tools/malware. Uses [Shodan](https://www.shodan.io/) searches to collect the IPs. The most recent collection is always stored in `data`; the IPs are broken down by tool and there is an `all.txt`.
+Free to use IOC feed for various tools/malware. It started out for just C2 tools but has morphed into tracking infostealers and botnets as well. It uses [Shodan](https://www.shodan.io/) searches to collect the IPs. The most recent collection is always stored in `data`; the IPs are broken down by tool and there is an `all.txt`.
 
 The feed should update daily. *Actively working on making the backend more reliable*
 
@@ -11,6 +11,7 @@ Many of the Shodan queries have been sourced from other CTI researchers:
 - [BushidoToken](https://twitter.com/BushidoToken)
 - [Michael Koczwara](https://twitter.com/MichalKoczwara)
 - [ViriBack](https://twitter.com/ViriBack)
+- [Gi7W0rm](https://twitter.com/Gi7w0rm)
 
 Huge shoutout to them!
 
@@ -48,6 +49,8 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit)
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
+- Botnets
+    - [7777 Botnet](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
 
 ### Running Locally
 
@@ -70,3 +73,4 @@ python3 tracker.py
 - [https://twitter.com/MichalKoczwara/status/1641676761283850241](https://twitter.com/MichalKoczwara/status/1641676761283850241)
 - [https://twitter.com/_montysecurity/status/1643164749599834112](https://twitter.com/_montysecurity/status/1643164749599834112)
 - [https://twitter.com/ViriBack/status/1713714868564394336](https://twitter.com/ViriBack/status/1713714868564394336)
+- [https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
