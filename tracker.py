@@ -92,7 +92,7 @@ def shodan():
             "http.favicon.hash:1088998712"
         ],
         # https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd
-        "777 Botnet": [
+        "7777 Botnet": [
             "hash:1357418825"
         ]
     }
