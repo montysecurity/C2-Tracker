@@ -43,6 +43,7 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - Collector Stealer
     - [Mystic Stealer](https://twitter.com/_montysecurity/status/1643164749599834112)
     - [Gotham Stealer](https://twitter.com/FalconFeedsio/status/1705765083429863720)
+    - [Meduza Stealer](https://twitter.com/g0njxa/status/1717563999984717991?t=rcVyVA2zwgJtHN5jz4wy7A&s=19)
 - Tools
     - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
     - [BurpSuite](https://portswigger.net/burp)

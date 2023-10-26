@@ -84,6 +84,10 @@ def shodan():
             "http.title:'Gotham Stealer'",
             "http.favicon.hash:-1651875345"
         ],
+        # https://twitter.com/g0njxa/status/1717563999984717991?t=rcVyVA2zwgJtHN5jz4wy7A&s=19
+        "Meduza Stealer": [
+            "http.html_hash:1368396833"
+        ],
         "BurpSuite": [ "http.html:BurpSuite" ],
         "PowerSploit" : [ "http.html:PowerSploit" ],
         "XMRig Monero Cryptominer": [
