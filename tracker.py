@@ -30,7 +30,8 @@ def shodan():
             ],
         "Mythic C2": [
             "ssl:Mythic port:7443",
-            "http.favicon.hash:-859291042"
+            "http.favicon.hash:-859291042",
+            "product:Mythic"
             ],
         "Brute Ratel C4": [
             "http.html_hash:-1957161625",
