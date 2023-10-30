@@ -123,10 +123,14 @@ def shodan():
             except:
                 print("Could not retrieve results..restarting")
                 main()
-            for result in results:
-                ip = str(result["ip_str"])
-                ip_set_from_product.add(ip)
-                ip_set_from_all_products.add(ip)
+            try:
+                for result in results:
+                    ip = str(result["ip_str"])
+                    ip_set_from_product.add(ip)
+                    ip_set_from_all_products.add(ip)
+            except:
+                print("Could not retrieve results..restarting")
+                main()
         for ip in ip_set_from_product:
             product_ips_file.write(f"{ip}\n")
             count_of_product_ips += 1
