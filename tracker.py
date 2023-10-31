@@ -48,7 +48,7 @@ def shodan():
             ],
         "Deimos C2": [
             "http.html_hash:-14029177",
-            "http.title:'Deimos C2'"
+            "product:'Deimos C2'"
             ],
         "PANDA C2":  [ "http.html:PANDA http.html:layui" ],
         "NimPlant C2" : [ "http.html_hash:-1258014549" ],
