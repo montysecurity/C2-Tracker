@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from shodan import Shodan
+from shodan import Shodan, exception
 
 def shodan():
     api_key = os.environ["SHODAN_API_KEY"].strip()
@@ -176,7 +176,7 @@ def shodan():
                     ip = str(result["ip_str"])
                     ip_set_from_product.add(ip)
                     ip_set_from_all_products.add(ip)
-            except shodan.exception.APIError:
+            except exception.APIError:
                 print("Shodan Error...restarting")
                 main()
         for ip in ip_set_from_product:
