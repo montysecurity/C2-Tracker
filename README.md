@@ -34,6 +34,8 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - [NimPlant C2](https://github.com/chvancooten/NimPlant)
     - [Havoc C2](https://github.com/HavocFramework/Havoc)
     - [Caldera](https://caldera.mitre.org/)
+    - [Empire](https://github.com/EmpireProject/Empire)
+    - [Ares](https://github.com/sweetsoftware/Ares)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -44,6 +46,21 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - [Mystic Stealer](https://twitter.com/_montysecurity/status/1643164749599834112)
     - [Gotham Stealer](https://twitter.com/FalconFeedsio/status/1705765083429863720)
     - [Meduza Stealer](https://twitter.com/g0njxa/status/1717563999984717991?t=rcVyVA2zwgJtHN5jz4wy7A&s=19)
+    - Quasar RAT
+    - ShadowPad
+    - AsyncRAT
+    - DcRat
+    - BitRAT
+    - DarkComet Trojan
+    - XtremeRAT Trojan
+    - NanoCore RAT Trojan
+    - Gh0st RAT Trojan
+    - DarkTrack RAT Trojan
+    - njRAT Trojan
+    - Remcos Pro RAT Trojan
+    - Poison Ivy Trojan
+    - Orcus RAT Trojan
+    - ZeroAccess Trojan
 - Tools
     - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
     - [BurpSuite](https://portswigger.net/burp)

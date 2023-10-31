@@ -22,6 +22,7 @@ def shodan():
         "Metasploit Framework C2": [
             "ssl:MetasploitSelfSignedCA",
             "http.favicon.hash:-127886975",
+            "product:Metasploit"
             ],
         "Covenant C2": [
             "ssl:Covenant http.component:Blazor",
@@ -99,6 +100,57 @@ def shodan():
         # https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd
         "7777 Botnet": [
             "hash:1357418825"
+        ],
+        "Quasar RAT": [
+            "product:'Quasar RAT'"
+        ],
+        "ShadowPad" : [
+            "product:ShadowPad"
+        ],
+        "AsyncRAT": [
+            "product:AsyncRAT"
+        ],
+        "DcRat": [
+            "product:DcRat"
+        ],
+        "BitRAT": [
+            "product:BitRAT"
+        ],
+        "Empire C2": [
+            "product:'Empire C2'"
+        ],
+        "DarkComet Trojan": [
+            "product:'DarkComet Trojan'"
+        ],
+        "XtremeRAT Trojan": [
+            "product:'XtremeRAT Trojan'"
+        ],
+        "NanoCore RAT Trojan": [
+            "product:'NanoCore RAT Trojan'"
+        ],
+        "Gh0st RAT Trojan": [
+            "product:'Gh0st RAT Trojan'"
+        ],
+        "DarkTrack RAT Trojan": [
+            "product:'DarkTrack RAT Trojan'"
+        ],
+        "njRAT Trojan": [
+            "product:'njRAT Trojan'"
+        ],
+        "Remcos Pro RAT Trojan": [
+            "product:'Remcos Pro RAT Trojan'"
+        ],
+        "Poison Ivy Trojan": [
+            "product:'Poison Ivy Trojan'"
+        ],
+        "Orcus RAT Trojan": [
+            "product:'Orcus RAT Trojan'"
+        ],
+        "Ares RAT C2": [
+            "product:'Ares RAT C2'"
+        ],
+        "ZeroAccess Trojan": [
+            "product:'ZeroAccess Trojan'"
         ]
     }
 
