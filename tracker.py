@@ -165,7 +165,8 @@ def shodan():
         for query in queries[product]:
             print(f"Product: {product}, Query: {query}")
             results = api.search_cursor(query)
-            # Catch Shodan Query Errors and restart the script
+            # Catch Shodan Query Errors and pass onto the next C2
+            # TODO: make it restart main() while keeping track of what was already documented
             try:
                 for result in results:
                     ip = str(result["ip_str"])
