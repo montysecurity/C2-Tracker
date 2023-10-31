@@ -171,12 +171,14 @@ def shodan():
             print(f"Product: {product}, Query: {query}")
             results = api.search_cursor(query)
             # Catch Shodan Query Errors and restart the script
-            if isinstance(results, Exception):
+            try:
+                for result in results:
+                    ip = str(result["ip_str"])
+                    ip_set_from_product.add(ip)
+                    ip_set_from_all_products.add(ip)
+            except:
+                print("Shodan Error...restarting")
                 main()
-            for result in results:
-                ip = str(result["ip_str"])
-                ip_set_from_product.add(ip)
-                ip_set_from_all_products.add(ip)
         for ip in ip_set_from_product:
             product_ips_file.write(f"{ip}\n")
             count_of_product_ips += 1
