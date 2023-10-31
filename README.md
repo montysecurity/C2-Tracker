@@ -79,6 +79,10 @@ python3 -m pip install -r requirements.txt
 python3 tracker.py
 ```
 
+## Contributing
+
+I encourage opening an issue/PR if you know of any additional Shodan searches for identifying adversary infrastructure. I will not set any hard guidelines around what can be submitted, just know, fidelity is paramount (high true/false positive ratio is the focus).
+
 ## References
 
 - [Hunting C2 with Shodan by Michael Koczwara](https://michaelkoczwara.medium.com/hunting-c2-with-shodan-223ca250d06f)
