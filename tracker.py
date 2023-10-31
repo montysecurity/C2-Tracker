@@ -177,6 +177,7 @@ def shodan():
                     ip_set_from_product.add(ip)
                     ip_set_from_all_products.add(ip)
             except shodan.exception.APIError:
+                print("Shodan Error...restarting")
                 main()
         for ip in ip_set_from_product:
             product_ips_file.write(f"{ip}\n")
