@@ -62,9 +62,7 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - Orcus RAT Trojan
     - ZeroAccess Trojan
 - Tools
-    - [Hashcat Cracking Tool](https://hashcat.net/hashcat/)
     - [BurpSuite](https://portswigger.net/burp)
-    - [PowerSploit](https://github.com/PowerShellMafia/PowerSploit)
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
 - Botnets

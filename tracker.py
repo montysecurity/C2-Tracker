@@ -48,13 +48,10 @@ def shodan():
             ],
         "Deimos C2": [
             "http.html_hash:-14029177",
-            "product:'Deimos C2'",
             "http.title:'Deimos C2'"
             ],
         "PANDA C2":  [ "http.html:PANDA http.html:layui" ],
-        "NimPlant C2" : [
-            "http.html_hash:-1258014549"
-            ],
+        "NimPlant C2" : [ "http.html_hash:-1258014549" ],
         "Havoc C2": [ "X-Havoc: true" ],
         # https://twitter.com/ViriBack/status/1713714868564394336
         "Caldera C2": [
@@ -72,8 +69,7 @@ def shodan():
             "http.html:patriotstealer"
         ],
         "RAXNET Bitcoin Stealer": [ "http.favicon.hash:-1236243965" ],
-        "Titan Stealer": [ 'http.html:"Titan Stealer"' ],
-        "Hachcat Cracking Tool": [ "http.html:hashcat"],
+        "Titan Stealer": [ "http.html:'Titan Stealer'" ],
         "Collector Stealer": [
             'http.html:"Collector Stealer"',
             'http.html:getmineteam'
@@ -91,7 +87,6 @@ def shodan():
             "http.html_hash:1368396833"
         ],
         "BurpSuite": [ "http.html:BurpSuite" ],
-        "PowerSploit" : [ "http.html:PowerSploit" ],
         "XMRig Monero Cryptominer": [
             "http.html:XMRig",
             "http.favicon.hash:-782317534",
