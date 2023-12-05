@@ -95,3 +95,4 @@ I encourage opening an issue/PR if you know of any additional Shodan searches fo
 - [https://twitter.com/_montysecurity/status/1643164749599834112](https://twitter.com/_montysecurity/status/1643164749599834112)
 - [https://twitter.com/ViriBack/status/1713714868564394336](https://twitter.com/ViriBack/status/1713714868564394336)
 - [https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
+- [https://twitter.com/Glacius_/status/1731699013873799209](https://twitter.com/Glacius_/status/1731699013873799209)
