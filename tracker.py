@@ -44,7 +44,8 @@ def shodan():
              ],
         "Sliver C2": [
             "ssl:multiplayer ssl:operators",
-            '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"'
+            '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"',
+            'product:"Sliver C2"'
             ],
         "Deimos C2": [
             "http.html_hash:-14029177",
