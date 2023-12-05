@@ -45,6 +45,7 @@ def shodan():
         "Sliver C2": [
             "ssl:multiplayer ssl:operators",
             '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"',
+            # https://twitter.com/Glacius_/status/1731699013873799209
             'product:"Sliver C2"'
             ],
         "Deimos C2": [
@@ -53,7 +54,9 @@ def shodan():
             ],
         "PANDA C2":  [ "http.html:PANDA http.html:layui" ],
         "NimPlant C2" : [ "http.html_hash:-1258014549" ],
-        "Havoc C2": [ "X-Havoc: true" ],
+        "Havoc C2": [
+            "X-Havoc: true",
+             "product:Havoc" ],
         # https://twitter.com/ViriBack/status/1713714868564394336
         "Caldera C2": [
             "http.favicon.hash:-636718605",

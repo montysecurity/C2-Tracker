@@ -12,6 +12,7 @@ Many of the Shodan queries have been sourced from other CTI researchers:
 - [Michael Koczwara](https://twitter.com/MichalKoczwara)
 - [ViriBack](https://twitter.com/ViriBack)
 - [Gi7W0rm](https://twitter.com/Gi7w0rm)
+- [@Glacius_](https://twitter.com/Glacius_)
 
 Huge shoutout to them!
 
