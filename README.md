@@ -62,8 +62,8 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - Poison Ivy Trojan
     - Orcus RAT Trojan
     - ZeroAccess Trojan
+    - HOOKBOT Trojan
 - Tools
-    - [BurpSuite](https://portswigger.net/burp)
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
 - Botnets

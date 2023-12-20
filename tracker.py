@@ -52,105 +52,121 @@ def shodan():
             "http.html_hash:-14029177",
             "product:'Deimos C2'"
             ],
-        "PANDA C2":  [ "http.html:PANDA http.html:layui" ],
-        "NimPlant C2" : [ "http.html_hash:-1258014549" ],
+        "PANDA C2":  [
+            "http.html:PANDA http.html:layui",
+            "product:'Panda C2'"
+            ],
+        "NimPlant C2" : [
+            "http.html_hash:-1258014549"
+            ],
         "Havoc C2": [
             "X-Havoc: true",
-             "product:Havoc" ],
+            "product:Havoc"
+        ],
         # https://twitter.com/ViriBack/status/1713714868564394336
         "Caldera C2": [
             "http.favicon.hash:-636718605",
             "http.html_hash:-1702274888",
             'http.title:"Login | CALDERA"'
-        ],
+            ],
         "GoPhish": [
             "http.title:'Gophish - Login'",
-        ],
-        "AcidRain Stealer": [ 'http.html:"AcidRain Stealer"' ],
-        "Misha Stealer": [ "http.title:misha http.component:UIKit" ],
+            ],
+        "AcidRain Stealer": [
+            'http.html:"AcidRain Stealer"'
+            ],
+        "Misha Stealer": [
+            "http.title:misha http.component:UIKit"
+            ],
         "Patriot Stealer": [
             "http.favicon.hash:274603478",
             "http.html:patriotstealer"
-        ],
-        "RAXNET Bitcoin Stealer": [ "http.favicon.hash:-1236243965" ],
-        "Titan Stealer": [ "http.html:'Titan Stealer'" ],
+            ],
+        "RAXNET Bitcoin Stealer": [
+            "http.favicon.hash:-1236243965"
+            ],
+        "Titan Stealer": [
+            "http.html:'Titan Stealer'"
+            ],
         "Collector Stealer": [
             'http.html:"Collector Stealer"',
             'http.html:getmineteam'
-        ],
+            ],
         "Mystic Stealer": [
             "http.title:'Mystic Stealer'",
             "http.favicon.hash:-442056565"
-        ],
+            ],
         "Gotham Stealer": [
             "http.title:'Gotham Stealer'",
             "http.favicon.hash:-1651875345"
-        ],
+            ],
         # https://twitter.com/g0njxa/status/1717563999984717991?t=rcVyVA2zwgJtHN5jz4wy7A&s=19
         "Meduza Stealer": [
             "http.html_hash:1368396833"
-        ],
-        "BurpSuite": [ "http.html:BurpSuite" ],
+            ],
         "XMRig Monero Cryptominer": [
             "http.html:XMRig",
             "http.favicon.hash:-782317534",
             "http.favicon.hash:1088998712"
-        ],
+            ],
         # https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd
         "7777 Botnet": [
             "hash:1357418825"
-        ],
+            ],
         "Quasar RAT": [
             "product:'Quasar RAT'"
-        ],
+            ],
         "ShadowPad" : [
             "product:ShadowPad"
-        ],
+            ],
         "AsyncRAT": [
             "product:AsyncRAT"
-        ],
+            ],
         "DcRat": [
             "product:DcRat"
-        ],
+            ],
         "BitRAT": [
             "product:BitRAT"
-        ],
+            ],
         "Empire C2": [
             "product:'Empire C2'"
-        ],
+            ],
         "DarkComet Trojan": [
             "product:'DarkComet Trojan'"
-        ],
+            ],
         "XtremeRAT Trojan": [
             "product:'XtremeRAT Trojan'"
-        ],
+            ],
         "NanoCore RAT Trojan": [
             "product:'NanoCore RAT Trojan'"
-        ],
+            ],
         "Gh0st RAT Trojan": [
             "product:'Gh0st RAT Trojan'"
-        ],
+            ],
         "DarkTrack RAT Trojan": [
             "product:'DarkTrack RAT Trojan'"
-        ],
+            ],
         "njRAT Trojan": [
             "product:'njRAT Trojan'"
-        ],
+            ],
         "Remcos Pro RAT Trojan": [
             "product:'Remcos Pro RAT Trojan'"
-        ],
+            ],
         "Poison Ivy Trojan": [
             "product:'Poison Ivy Trojan'"
-        ],
+            ],
         "Orcus RAT Trojan": [
             "product:'Orcus RAT Trojan'"
-        ],
+            ],
         "Ares RAT C2": [
             "product:'Ares RAT C2'"
-        ],
+            ],
         "ZeroAccess Trojan": [
             "product:'ZeroAccess Trojan'"
-        ]
+            ],
+        "Hookbot": [
+            "http.title:'Hookbot Panel'"
+            ]
     }
 
     # https://www.techiedelight.com/delete-all-files-directory-python/
