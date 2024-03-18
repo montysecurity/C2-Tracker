@@ -102,7 +102,8 @@ def shodan():
             ],
         # https://twitter.com/g0njxa/status/1717563999984717991?t=rcVyVA2zwgJtHN5jz4wy7A&s=19
         "Meduza Stealer": [
-            "http.html_hash:1368396833"
+            "http.html_hash:1368396833",
+            "http.title:'Meduza Stealer'"
             ],
         "XMRig Monero Cryptominer": [
             "http.html:XMRig",
