@@ -12,7 +12,8 @@ Many of the Shodan queries have been sourced from other CTI researchers:
 - [Michael Koczwara](https://twitter.com/MichalKoczwara)
 - [ViriBack](https://twitter.com/ViriBack)
 - [Gi7W0rm](https://twitter.com/Gi7w0rm)
-- [@Glacius_](https://twitter.com/Glacius_)
+- [Glacius_](https://twitter.com/Glacius_)
+- [corumir](https://github.com/corumir)
 
 Huge shoutout to them!
 
@@ -66,8 +67,10 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
+    - [Hak5 Cloud C2](https://shop.hak5.org/products/c2)
 - Botnets
     - [7777 Botnet](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
+    - [BlackNET](https://github.com/suriya73/BlackNET)
 
 ### Running Locally
 

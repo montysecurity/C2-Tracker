@@ -168,9 +168,14 @@ def shodan():
         "Hookbot": [
             "http.title:'Hookbot Panel'"
             ],
-        # Credit https://github.com/corumir
+        # Credit: https://github.com/corumir
         "Hak5 Cloud C2": [
             "product:'Hak5 Cloud C2'"
+        ],
+        # Credit: https://github.com/corumir
+        # Tool: https://github.com/suriya73/BlackNET
+        "BlackNET Botnet": [
+            "http.title:'BlackNet - Login'"
         ]
     }
 
