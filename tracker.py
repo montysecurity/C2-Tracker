@@ -187,7 +187,7 @@ def shodan():
         ],
         # Credit: https://github.com/corumir
         # Tool: https://github.com/cassanof/pantegana
-        "Pantegana": [
+        "Pantegana C2": [
             "ssl:Pantegana ssl:localhost",
             "ssl.cert.issuer.cn:'Pantegana Root CA'"
         ]
