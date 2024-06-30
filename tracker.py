@@ -179,6 +179,11 @@ def shodan():
         ],
         "Doxerina BotNet": [
             "http.title:'Doxerina BotNet'"
+        ],
+        # Credit: https://github.com/corumir
+        # Tool: https://github.com/noke6262/RisePro-Stealer
+        "RisePro Stealer": [
+            "'Server: RisePro'"
         ]
     }
 

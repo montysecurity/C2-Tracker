@@ -65,6 +65,7 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - Orcus RAT Trojan
     - ZeroAccess Trojan
     - HOOKBOT Trojan
+    - [RisePro Stealer](https://github.com/noke6262/RisePro-Stealer)
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
