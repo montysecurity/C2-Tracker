@@ -184,6 +184,12 @@ def shodan():
         # Tool: https://github.com/noke6262/RisePro-Stealer
         "RisePro Stealer": [
             "'Server: RisePro'"
+        ],
+        # Credit: https://github.com/corumir
+        # Tool: https://github.com/cassanof/pantegana
+        "Pantegana": [
+            "ssl:Pantegana ssl:localhost",
+            "ssl.cert.issuer.cn:'Pantegana Root CA'"
         ]
     }
 
