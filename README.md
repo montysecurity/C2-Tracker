@@ -38,6 +38,7 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - [Caldera](https://caldera.mitre.org/)
     - [Empire](https://github.com/EmpireProject/Empire)
     - [Ares](https://github.com/sweetsoftware/Ares)
+    - [Hak5 Cloud C2](https://shop.hak5.org/products/c2)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -67,7 +68,6 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
-    - [Hak5 Cloud C2](https://shop.hak5.org/products/c2)
 - Botnets
     - [7777 Botnet](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
     - [BlackNET](https://github.com/suriya73/BlackNET)
