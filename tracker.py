@@ -167,7 +167,11 @@ def shodan():
             ],
         "Hookbot": [
             "http.title:'Hookbot Panel'"
-            ]
+            ],
+        # Credit https://github.com/corumir
+        "Hak5 Cloud C2": [
+            "product:'Hak5 Cloud C2'"
+        ]
     }
 
     # https://www.techiedelight.com/delete-all-files-directory-python/
