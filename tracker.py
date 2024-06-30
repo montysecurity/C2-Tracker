@@ -40,7 +40,7 @@ def shodan():
             ],
         "Posh C2": [ 
             "ssl:P18055077",
-             "product:PoshC2"
+            "product:PoshC2"
              ],
         "Sliver C2": [
             "ssl:multiplayer ssl:operators",
