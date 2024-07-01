@@ -190,6 +190,13 @@ def shodan():
         "Pantegana C2": [
             "ssl:Pantegana ssl:localhost",
             "ssl.cert.issuer.cn:'Pantegana Root CA'"
+        ],
+        # Credit: https://github.com/corumir
+        # Tool: https://github.com/tdragon6/Supershell/tree/main
+        "Supershell C2": [
+            "http.html_hash:84573275",
+            "http.favicon.hash:-1010228102",
+            "http.title:'Supershell - 登录'"
         ]
     }
 

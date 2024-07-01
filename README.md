@@ -40,6 +40,7 @@ And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Li
     - [Ares](https://github.com/sweetsoftware/Ares)
     - [Hak5 Cloud C2](https://shop.hak5.org/products/c2)
     - [Pantegana](https://github.com/cassanof/pantegana)
+    - [Supershell](https://github.com/tdragon6/Supershell/tree/main)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
