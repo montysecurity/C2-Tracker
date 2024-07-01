@@ -43,7 +43,7 @@ def shodan():
             "product:PoshC2"
              ],
         "Sliver C2": [
-            "ssl:multiplayer ssl:operators",
+            "ssl:multiplayer ssl.cert.issuer.cn:operators",
             '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"',
             # https://twitter.com/Glacius_/status/1731699013873799209
             'product:"Sliver C2"'
