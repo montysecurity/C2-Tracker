@@ -177,7 +177,7 @@ def shodan():
         "BlackNET Botnet": [
             "http.title:'BlackNet - Login'"
         ],
-        "Doxerina BotNet": [
+        "Doxerina Botnet": [
             "http.title:'Doxerina BotNet'"
         ],
         # Credit: https://github.com/corumir
