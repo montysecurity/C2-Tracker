@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 from shodan import Shodan, exception
+from censys.search import CensysHosts
 
 def shodan():
     api_key = os.environ["SHODAN_API_KEY"].strip()
@@ -170,7 +171,8 @@ def shodan():
             ],
         # Credit: https://github.com/corumir
         "Hak5 Cloud C2": [
-            "product:'Hak5 Cloud C2'"
+            "product:'Hak5 Cloud C2'",
+            "http.favicon.hash:1294130019"
         ],
         # Credit: https://github.com/corumir
         # Tool: https://github.com/suriya73/BlackNET
@@ -197,6 +199,14 @@ def shodan():
             "http.html_hash:84573275",
             "http.favicon.hash:-1010228102",
             "http.title:'Supershell - 登录'"
+        ],
+        "Viper C2": [
+            "http.html_hash:-1250764086"
+        ],
+        "Poseidon C2": [
+            "http.favicon.hash:219045137",
+            "http.html_hash:-1139460879",
+            "hash:799564296"
         ]
     }
 
@@ -206,11 +216,7 @@ def shodan():
         os.remove(file.path)
 
     ip_set_from_all_products = set()
-    count_of_all_ips = 0
-    count_of_products = 0
     for product in queries:
-        count_of_products += 1
-        count_of_product_ips = 0
         ip_set_from_product = set()
         product_ips_file = open(f"data/{product} IPs.txt", "a")
         for query in queries[product]:
@@ -227,27 +233,69 @@ def shodan():
                 continue
         for ip in ip_set_from_product:
             product_ips_file.write(f"{ip}\n")
-            count_of_product_ips += 1
-        print(f"- Created data/{product} IPs.txt")
-        if count_of_product_ips == 1:
-            print(f"- Documented {count_of_product_ips} IP address\n\n")
-        elif count_of_product_ips > 1:
-            print(f"- Documented {count_of_product_ips} unique IP addresses\n\n")
 
     all_ips_file = open("data/all.txt", "a")
     for ip in ip_set_from_all_products:
         all_ips_file.write(f"{ip}\n")
-        count_of_all_ips += 1
-    print("\n- Created data/all.txt")
-    print(f"- Searched for {count_of_products} different tools/malware")
-    if count_of_all_ips == 1:
-        print(f"- Documented {count_of_all_ips} IP address")
-    elif count_of_all_ips > 1:
-        print(f"- Documented {count_of_all_ips} unique IP addresses")
+
+def censys():
+    queries = {
+        "RisePro Stealer": [
+            "services.http.response.headers: (key: `Server` and value.headers: `RisePro`)",
+            "services.software.product:RisePro"
+        ],
+        "Viper C2": [
+            "services.software.product=`VIPER`"
+        ],
+        "Poseidon C2": [
+            "services.http.response.html_title=`POSEIDON`"
+        ]
+    }
+    h = CensysHosts()
+    all_ips = set()
+    for product in queries:
+        ips = set()
+        product_ips_file = open(f"data/{product} IPs.txt", "a")
+        for search_string in queries[product]:
+            print(f"Product: {product}, Query: {search_string}")
+            query = h.search(search_string)
+            results = None
+            try:
+                results = query()
+            except Exception as err:
+                print(err)
+                continue
+            for host in results:
+                ip = str(host['ip'])
+                all_ips.add(ip)
+                ips.add(ip)
+        for ip in ips:
+            product_ips_file.write(f"{ip}\n")
+    all_ips_file = open("data/all.txt", "a")
+    for ip in all_ips:
+        all_ips_file.write(f"{ip}\n")
+
+def deconflict():
+    # Remove any duplicates from the files
+    files = os.listdir("data/")
+    for file in files:
+        filepath = f"data/{file}"
+        f = open(filepath, "r")
+        lines = f.readlines()
+        f.close()
+        if len(lines) != len(set(lines)):
+            print(f"Deconflicting: {filepath}")
+            os.remove(filepath)
+            f = open(filepath, "a")
+            for line in set(lines):
+                f.write(line)
+            f.close()
 
 def main():
     load_dotenv()
     shodan()
+    censys()
+    deconflict()
 
 if __name__ == '__main__':
     main()
