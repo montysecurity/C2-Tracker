@@ -210,6 +210,9 @@ def shodan():
         ],
         "Scarab Botnet": [
             "http.title:'Scarab Botnet PANEL'"
+        ],
+        "Bandit Stealer": [
+            "http.title:Login http.html:'Welcome to Bandit' 'Content-Length: 4125' port:8080"
         ]
     }
 
