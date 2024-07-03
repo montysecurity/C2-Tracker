@@ -257,7 +257,19 @@ def censys():
             "services.http.response.html_title=`POSEIDON`"
         ],
         "Scarab Botnet": [
-            "services.software.product:Scarab"
+            "services.software.product=`Scarab`"
+        ],
+        "Cobalt Strike C2": [
+            "services.software.product=`Cobalt Strike`"
+        ],
+        "AsyncRAT": [
+            "services.software.product=`AsyncRAT`"
+        ],
+        "Supershell C2": [
+            "services.software.product=`Supershell`"
+        ],
+        "Hak5 Cloud C2": [
+            "services.software.product=`Cloud C2`"
         ]
     }
     h = CensysHosts()
