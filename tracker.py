@@ -282,6 +282,9 @@ def censys():
         ],
         "Sliver C2": [
             "services.software.product:`SLIVER`"
+        ],
+        "ShadowPad": [
+            "services.software.product:`SHADOWPAD`"
         ]
     }
     h = CensysHosts()
