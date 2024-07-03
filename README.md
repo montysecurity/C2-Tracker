@@ -86,6 +86,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [7777](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
     - [BlackNET](https://github.com/suriya73/BlackNET)
     - Doxerina
+    - Scarab
 
 ## Running Locally
 

@@ -207,6 +207,9 @@ def shodan():
             "http.favicon.hash:219045137",
             "http.html_hash:-1139460879",
             "hash:799564296"
+        ],
+        "Scarab Botnet": [
+            "http.title:'Scarab Botnet PANEL'"
         ]
     }
 
@@ -249,6 +252,9 @@ def censys():
         ],
         "Poseidon C2": [
             "services.http.response.html_title=`POSEIDON`"
+        ],
+        "Scarab Botnet": [
+            "services.software.product:Scarab"
         ]
     }
     h = CensysHosts()
