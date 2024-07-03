@@ -270,6 +270,9 @@ def censys():
         ],
         "Hak5 Cloud C2": [
             "services.software.product=`Cloud C2`"
+        ],
+        "Gh0st RAT Trojan": [
+            "services.service_name:`GHOST`"
         ]
     }
     h = CensysHosts()
