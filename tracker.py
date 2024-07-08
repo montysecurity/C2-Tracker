@@ -213,6 +213,9 @@ def shodan():
         ],
         "Bandit Stealer": [
             "http.title:Login http.html:'Welcome to Bandit' 'Content-Length: 4125' port:8080"
+        ],
+        "NetBus Trojan": [
+            "product:'NetBus Trojan'"
         ]
     }
 
