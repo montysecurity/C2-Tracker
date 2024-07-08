@@ -52,6 +52,8 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [Hak5 Cloud C2](https://shop.hak5.org/products/c2)
     - [Pantegana](https://github.com/cassanof/pantegana)
     - [Supershell](https://github.com/tdragon6/Supershell/tree/main)
+    - Poseidon C2
+    - Viper C2
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -79,6 +81,8 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - ZeroAccess Trojan
     - HOOKBOT Trojan
     - [RisePro Stealer](https://github.com/noke6262/RisePro-Stealer)
+    - NetBus Trojan
+    - Bandit Stealer
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
