@@ -83,6 +83,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [RisePro Stealer](https://github.com/noke6262/RisePro-Stealer)
     - NetBus Trojan
     - Bandit Stealer
+    - Mint Stealer
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)

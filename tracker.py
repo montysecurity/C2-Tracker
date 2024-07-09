@@ -288,6 +288,9 @@ def censys():
         ],
         "ShadowPad": [
             "services.software.product:`SHADOWPAD`"
+        ],
+        "Mint Stealer": [
+            "services.software.product=`Mint Stealer`"
         ]
     }
     h = CensysHosts()
