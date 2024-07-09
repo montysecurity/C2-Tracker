@@ -85,6 +85,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Bandit Stealer
     - Mint Stealer
     - Mekotio Trojan
+    - Gozi Trojan
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
