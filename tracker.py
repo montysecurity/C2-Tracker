@@ -297,6 +297,9 @@ def censys():
         ],
         "Gozi Trojan": [
             "services.software.product=`Gozi`"
+        ],
+        "Browser Exploitation Framework (BeEF)": [
+            "services.software.product=`Browser Exploitation Framework (BeEF)`"
         ]
     }
     h = CensysHosts()
