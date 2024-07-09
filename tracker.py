@@ -304,6 +304,9 @@ def censys():
         ],
         "Browser Exploitation Framework (BeEF)": [
             "services.software.product=`Browser Exploitation Framework (BeEF)`"
+        ],
+        "Mythic C2": [
+            "services.software.product:`Mythic`"
         ]
     }
     h = CensysHosts()
