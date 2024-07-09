@@ -216,6 +216,10 @@ def shodan():
         ],
         "NetBus Trojan": [
             "product:'NetBus Trojan'"
+        ],
+        "UnamWebPanel": [
+            "html:unam_lib.js http.favicon.hash:-1278680098,-1531496738",
+            "http.title:'Unam Web Panel &mdash; Login'"
         ]
     }
 
