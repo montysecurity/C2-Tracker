@@ -84,6 +84,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - NetBus Trojan
     - Bandit Stealer
     - Mint Stealer
+    - Mekotio Trojan
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)

@@ -291,6 +291,9 @@ def censys():
         ],
         "Mint Stealer": [
             "services.software.product=`Mint Stealer`"
+        ],
+        "Mekotio Trojan": [
+            "services.software.product=`Mekotio`"
         ]
     }
     h = CensysHosts()
