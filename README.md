@@ -55,6 +55,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Poseidon C2
     - Viper C2
     - [UnamWebPanel](https://github.com/UnamSanctam/UnamWebPanel)
+    - [Vshell](https://github.com/veo/vshell)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)

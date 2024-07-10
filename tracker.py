@@ -306,6 +306,9 @@ def censys():
         ],
         "Mythic C2": [
             "services.software.product:`Mythic`"
+        ],
+        "Vshell C2": [
+            "services.software.product=`Vshell`"
         ]
     }
     h = CensysHosts()
