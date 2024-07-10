@@ -16,7 +16,6 @@ def shodan():
         "Cobalt Strike C2": [
             "ssl.cert.serial:146473198",
             "hash:-2007783223 port:50050",
-            "ssl.jarm:07d14d16d21d21d00042d41d00041de5fb3038104f457d92ba02e9311512c2",
             "product:'Cobalt Strike Beacon'",
             "ssl:foren.zik"
             ],
