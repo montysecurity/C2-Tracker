@@ -309,6 +309,9 @@ def censys():
         ],
         "Vshell C2": [
             "services.software.product=`Vshell`"
+        ],
+        "Hookbot": [
+            "services.software.product:`Hookbot`"
         ]
     }
     h = CensysHosts()
