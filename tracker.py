@@ -312,6 +312,12 @@ def censys():
         ],
         "Hookbot": [
             "services.software.product:`Hookbot`"
+        ],
+        "Quasar RAT": [
+            "services.software.product:`Quasar`"
+        ],
+        "Havoc C2": [
+            "services.software.product:`Havoc`"
         ]
     }
     h = CensysHosts()
