@@ -219,6 +219,9 @@ def shodan():
         "UnamWebPanel": [
             "html:unam_lib.js http.favicon.hash:-1278680098,-1531496738",
             "http.title:'Unam Web Panel &mdash; Login'"
+        ],
+        "Atlantida": [
+            "http.title:'Atlantida' http.html:'GY7HXsD.jpg'"
         ]
     }
 
@@ -318,6 +321,9 @@ def censys():
         ],
         "Havoc C2": [
             "services.software.product:`Havoc`"
+        ],
+        "Atlandida": [
+            "services.http.response.html_title:`Atlantida` and services.http.response.body:`GY7HXsD.jpg`"
         ]
     }
     h = CensysHosts()
