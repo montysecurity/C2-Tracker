@@ -323,7 +323,7 @@ def censys():
             "services.software.product:`Havoc`"
         ],
         "Atlandida": [
-            "services.http.response.html_title:`Atlantida` and services.http.response.body:`GY7HXsD.jpg`"
+            "services: (http.response.html_title:`Atlantida` and http.response.body:`GY7HXsD.jpg`)"
         ]
     }
     h = CensysHosts()
