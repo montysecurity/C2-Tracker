@@ -323,7 +323,8 @@ def censys():
             "services.software.product:`Mythic`"
         ],
         "Vshell C2": [
-            "services.software.product=`Vshell`"
+            "services.software.product=`Vshell`",
+            "services.http.response.html_title:'Vshell - 登录'"
         ],
         "Hookbot": [
             "services.software.product:`Hookbot`"
