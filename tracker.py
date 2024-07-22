@@ -38,10 +38,13 @@ def shodan():
             "http.html_hash:-1957161625",
             "product:'Brute Ratel C4'"
             ],
+        # https://x.com/pedrinazziM/status/1808629285726400879
         "Posh C2": [ 
             "ssl:P18055077",
-            "product:PoshC2"
-             ],
+            "product:PoshC2",
+            "http.html_hash:855112502",
+            "http.html_hash:-1700067737"
+            ],
         "Sliver C2": [
             "ssl:multiplayer ssl.cert.issuer.cn:operators",
             '"HTTP/1.1 404 Not Found" "Cache-Control: no-store, no-cache, must-revalidate" "Content-Length: 0" -"Server:" -"Pragma:"',
