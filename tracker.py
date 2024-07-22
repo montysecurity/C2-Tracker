@@ -223,6 +223,9 @@ def shodan():
         "Atlandida Stealer": [
             "http.title:'Atlantida' http.html:'GY7HXsD.jpg'"
         ],
+        "Vshell C2": [
+            "http.title:'Vshell - 登录'"
+        ],
         "BurpSuite": [
             "product:BurpSuite"
         ],
