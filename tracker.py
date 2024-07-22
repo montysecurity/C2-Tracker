@@ -222,6 +222,9 @@ def shodan():
         ],
         "Atlandida Stealer": [
             "http.title:'Atlantida' http.html:'GY7HXsD.jpg'"
+        ],
+        "BurpSuite": [
+            "product:BurpSuite"
         ]
     }
 
