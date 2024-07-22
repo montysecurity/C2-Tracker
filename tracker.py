@@ -228,6 +228,9 @@ def shodan():
         ],
         "Hachcat": [
             "product:'Hachcat Cracking Tool'"
+        ],
+        "MobSF": [
+            "http.title:'Mobile Security Framework - MobSF'"
         ]
     }
 

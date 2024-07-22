@@ -95,6 +95,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [Browser Exploitation Framework (BeEF)](https://github.com/beefproject/beef)
     - [BurpSuite](https://portswigger.net/burp)
     - [Hashcat](https://hashcat.net/hashcat/)
+    - [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
 - Botnets
     - [7777](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
     - [BlackNET](https://github.com/suriya73/BlackNET)
