@@ -225,6 +225,9 @@ def shodan():
         ],
         "BurpSuite": [
             "product:BurpSuite"
+        ],
+        "Hachcat": [
+            "product:'Hachcat Cracking Tool'"
         ]
     }
 
