@@ -340,6 +340,48 @@ def censys():
         ],
         "Atlandida Stealer": [
             "services: (http.response.html_title:`Atlantida` and http.response.body:`GY7HXsD.jpg`)"
+        ],
+        "VenomRAT": [
+            "services.software.product:VenomRAT"
+        ],
+        "Orcus RAT": [
+            "services.software.product:Orcus"
+        ],
+        "DcRAT": [
+            "services.software.product:DcRat"
+        ],
+        "Posh C2": [
+            "services.software.product:PoshC2"
+        ],
+        "Deimos C2": [
+            "services.software.product:DeimosC2"
+        ],
+        "Covenant C2": [
+            "services.software.product:Covenant"
+        ],
+        "BitRAT": [
+            "services.software.product:BitRAT"
+        ],
+        "BlackDolphin": [
+            "services.software.product:BlackDolphin"
+        ],
+        "Artemis RAT": [
+            "services.software.product:'Artemis Rat'"
+        ],
+        "Godzilla Loader": [
+            "services.software.product:godzilla-loader"
+        ],
+        "Jinx Loader": [
+            "services.software.product:JinxLoader"
+        ],
+        "Neptune Loader": [
+            "services.software.product:neptune-loader"
+        ],
+        "Nimplant C2": [
+            "services.software.product:NimPlant"
+        ],
+        "Ares RAT C2": [
+            "services.software.product:'Ares RAT'"
         ]
     }
     h = CensysHosts()

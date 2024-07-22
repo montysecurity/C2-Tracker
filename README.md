@@ -89,6 +89,16 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Mekotio Trojan
     - Gozi Trojan
     - Atlandida Stealer
+    - VenomRAT
+    - Orcus RAT
+    - DcRAT
+    - BitRAT
+    - BlackDolphin
+    - Artemis RAT
+    - Godzilla Loader
+    - Jinx Loader
+    - Netpune Loader
+    - [Nimplant C2](https://github.com/chvancooten/NimPlant)
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
