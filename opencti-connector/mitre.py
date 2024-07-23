@@ -157,7 +157,4 @@ def main():
         create_relationships(indicators, tools=malware)
         create_relationships(indicators, tools)
 
-#main()
-
-s = opencti_api_client.stix_cyber_observable.list()
-print(s)
+main()
