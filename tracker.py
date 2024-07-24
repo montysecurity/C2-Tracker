@@ -237,6 +237,9 @@ def shodan():
         ],
         "MobSF": [
             "http.title:'Mobile Security Framework - MobSF'"
+        ],
+        "SpyAgent": [
+            "title:'SpY-Agent v1.2'"
         ]
     }
 
@@ -382,6 +385,9 @@ def censys():
         ],
         "Ares RAT C2": [
             "services.software.product:'Ares RAT'"
+        ],
+        "SpyAgent": [
+            "services.http.response.html_title:'SpY-Agent v1.2'"
         ]
     }
     h = CensysHosts()
