@@ -32,25 +32,8 @@ def delete_current_indicators():
         for i in range(int(len(indicator["objectLabel"]))):
             if str(indicator["objectLabel"][i]["value"]) == "c2-tracker":
                 opencti_api_client.stix_domain_object.delete(id=indicator["id"])
-    
-    #final_relationships = []
-    #data = {"pagination": {"hasNextPage": True, "endCursor": None}}
-    #while data["pagination"]["hasNextPage"]:
-    #    after = data["pagination"]["endCursor"]
-    #    if after:
-    #        print("Listing indicators after " + after)
-    #    data = opencti_api_client.stix_core_relationship.list(
-    #        first=50,
-    #        after=after,
-    #        withPagination=True,
-    #        orderBy="created_at",
-    #        orderMode="asc",
-    #    )
-    #    final_relationships += data["entities"]
-#
-    #for relationship in final_relationships:
-    #    for i in range(int(len(relationship["objectLabel"]))):
-    #        if str(relationship["objectLabel"][i]["value"]) == "c2-tracker":
-    #            opencti_api_client.stix_core_relationship.delete(id=relationship["id"])
 
-delete_current_indicators()
+def main():
+    delete_current_indicators()
+
+main()
