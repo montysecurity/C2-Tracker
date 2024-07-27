@@ -1,15 +1,16 @@
 import requests
-import urllib
 import re
 from time import sleep
 from pycti import OpenCTIApiClient
 import os
-from dateutil.parser import parse
-from datetime import date, timedelta, datetime
+from datetime import date
 from stix2 import TLP_WHITE
+from time import sleep
 
 api_url = "http://192.168.1.78:8080"
 api_token = os.getenv("OPENCTI_C2TRACKER_TOKEN")
+print(f"[+] API Token: {api_token}")
+print(f"[+] API URL: {api_url}")
 opencti_api_client = OpenCTIApiClient(api_url, api_token)
 
 def get_current_c2_tracker_ips():
@@ -35,8 +36,7 @@ def get_current_c2_tracker_ips():
     return all_ips
 
 def add_indicator(c2, ip):
-    malwares = opencti_api_client.indicator.list()
-    #print(malwares)
+    print(f"[+] Adding {c2} indicator", ip)
     date_now = str(date.today().strftime("%Y-%m-%dT%H:%M:%SZ"))
     # Create the tag (if not exists)
     label = opencti_api_client.label.create(
@@ -48,7 +48,6 @@ def add_indicator(c2, ip):
     TLP_WHITE_CTI = opencti_api_client.marking_definition.read(id=TLP_WHITE["id"])
     
     # Create indicator
-    print(c2 + " --- " + ip)
     indicator = opencti_api_client.indicator.create(
         name=f"{c2} IP - {ip}",
         description=f"This IP is was recently seen hosting {c2}",
@@ -64,8 +63,7 @@ def add_indicator(c2, ip):
     # Add label to indicator
     opencti_api_client.stix_domain_object.add_label(id=indicator["id"], label_id=label["id"])
 
-def update_opencti():
-    print("[+] Adding IOCs")
+def update_opencti(current_opencti_c2_tracker_indicators):
     # Create variable to hold all IPs
     # will be used to compare against current IPs in OpenCTI
     # Will delete any IPs in OpenCTI and not in the all_ips variable
@@ -88,13 +86,15 @@ def update_opencti():
         # Remote empty newline
         ips.pop()
         for ip in ips:
-            print(f"[+] Adding {tool} IP: {ip}")
-            add_indicator(tool, ip)
-            # use break for testing 1 IP of all tools
-            break
+            if ip not in current_opencti_c2_tracker_indicators:
+                add_indicator(tool, ip)
+                # use break for testing 1 IP of all tools
+                #break
+            elif ip in current_opencti_c2_tracker_indicators:
+                print("[+] Skipping upload of", ip, "as it is already in OpenCTI")
 
-def delete_aged_out_indicators(current_iocs):
-    print("[+] Deleting indicators")
+def opencti_indicator_loop(current_c2_tracker_ips, delete_old_iocs):
+    print("[+] Deleting old indicators")
     final_indicators = []
     data = {"pagination": {"hasNextPage": True, "endCursor": None}}
     while data["pagination"]["hasNextPage"]:
@@ -110,18 +110,22 @@ def delete_aged_out_indicators(current_iocs):
         )
         final_indicators += data["entities"]
 
+    current_opencti_c2_tracker_indicators = set()
     for indicator in final_indicators:
         for i in range(int(len(indicator["objectLabel"]))):
             if str(indicator["objectLabel"][i]["value"]) == "c2-tracker":
                 ioc = str(indicator["name"]).split(" - ")[1]
-                if ioc not in current_iocs:
-                    print(f"[+] Deleting {ioc}")
-                    opencti_api_client.stix_domain_object.delete(id=indicator["id"])
+                if delete_old_iocs:
+                    if ioc not in current_c2_tracker_ips:
+                        print(f"[+] Deleting {ioc}")
+                        opencti_api_client.stix_domain_object.delete(id=indicator["id"])
+                elif not delete_old_iocs:
+                    current_opencti_c2_tracker_indicators.add(ioc)
+    
+    return current_opencti_c2_tracker_indicators
 
 def check_mitre():
     mitre = False
-
-    final_malware = []
     data = {"pagination": {"hasNextPage": True, "endCursor": None}}
     while data["pagination"]["hasNextPage"] and mitre == False:
         after = data["pagination"]["endCursor"]
@@ -236,10 +240,6 @@ def create_relationships(indicators, tools):
             if mapping[m] == n:
                 for t in tools:
                     if t["name"] == m:
-                        print(n, "---", m)
-                        print(i)
-                        print()
-                        print(t)
                         relationship = opencti_api_client.stix_core_relationship.create(
                             fromType=str(i["entity_type"]),
                             fromId=str(i["id"]),
@@ -255,9 +255,10 @@ def create_relationships(indicators, tools):
                         opencti_api_client.stix_core_relationship.add_label(id=relationship["id"], label_id=label["id"])
 
 def main():
-    current_iocs = get_current_c2_tracker_ips()
-    delete_aged_out_indicators(current_iocs)
-    update_opencti()
+    current_c2_tracker_ips = get_current_c2_tracker_ips()
+    current_opencti_c2_tracker_indicators = opencti_indicator_loop(current_c2_tracker_ips, delete_old_iocs=False)
+    opencti_indicator_loop(current_c2_tracker_ips, delete_old_iocs=True)
+    update_opencti(current_opencti_c2_tracker_indicators)
     mitre = check_mitre()
     if mitre:
         indicators = get_current_indicators()
@@ -266,4 +267,14 @@ def main():
         create_relationships(indicators, tools=malware)
         create_relationships(indicators, tools)
 
-main()
+def loop():
+    try:
+        main()
+    except Exception as e:
+        print("[+] Main Loop Failed. Restarting in 10 seconds.")
+        print(e)
+        sleep(10)
+        loop()
+
+if __name__ == "__main__":
+    loop()
