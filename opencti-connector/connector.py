@@ -251,7 +251,7 @@ def create_relationships(indicators, tools):
                             description="This is a server hosting the tool",
                             markingDefinitions=[TLP_WHITE_CTI["id"]]
                         )
-                        # Add label to indicator
+                        # Add label to relationship
                         opencti_api_client.stix_core_relationship.add_label(id=relationship["id"], label_id=label["id"])
 
 def main():
