@@ -7,7 +7,7 @@ from datetime import date
 from stix2 import TLP_WHITE
 from time import sleep
 
-api_url = "http://192.168.1.78:8080"
+api_url = os.getenv("OPENCTI_URL")
 api_token = os.getenv("OPENCTI_C2TRACKER_TOKEN")
 print(f"[+] API Token: {api_token}")
 print(f"[+] API URL: {api_url}")

@@ -1,14 +1,7 @@
-import requests
-import urllib
-import re
-from time import sleep
 from pycti import OpenCTIApiClient
 import os
-from dateutil.parser import parse
-from datetime import date, timedelta, datetime
-from stix2 import TLP_WHITE
 
-api_url = "http://192.168.1.78:8080"
+api_url = os.getenv("OPENCTI_URL")
 api_token = os.getenv("OPENCTI_C2TRACKER_TOKEN")
 opencti_api_client = OpenCTIApiClient(api_url, api_token)
 
