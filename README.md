@@ -57,6 +57,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [UnamWebPanel](https://github.com/UnamSanctam/UnamWebPanel)
     - [Vshell](https://github.com/veo/vshell)
     - [Villain](https://github.com/t3l3machus/Villain)
+    - [Nimplant C2](https://github.com/chvancooten/NimPlant)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -99,7 +100,6 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Godzilla Loader
     - Jinx Loader
     - Netpune Loader
-    - [Nimplant C2](https://github.com/chvancooten/NimPlant)
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
