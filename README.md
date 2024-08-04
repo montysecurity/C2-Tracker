@@ -100,6 +100,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Godzilla Loader
     - Jinx Loader
     - Netpune Loader
+    - [SpyAgent](https://www.deepinstinct.com/blog/the-russian-spyagent-a-decade-later-and-rat-tools-remain-at-risk)
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
