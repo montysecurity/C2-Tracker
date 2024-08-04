@@ -386,7 +386,7 @@ def censys():
         "Ares RAT C2": [
             "services.software.product:'Ares RAT'"
         ],
-        "Villian C2": [
+        "Villain C2": [
             "services.banner='whoami\\n'"
         ]
     }
