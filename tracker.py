@@ -240,6 +240,9 @@ def shodan():
         ],
         "Villain C2": [
             "hash:856668804"
+        ],
+        "SpyAgent": [
+            "http.title:'SpY-Agent v1.2'"
         ]
     }
 
@@ -388,6 +391,10 @@ def censys():
         ],
         "Villain C2": [
             "services.banner='whoami\\n'"
+        ],
+        "SpyAgent": [
+            "services.http.response.html_title:'SpY-Agent v1.2'",
+            "services.software.product=`Spy-Agent`"
         ]
     }
     h = CensysHosts()
