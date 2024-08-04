@@ -126,7 +126,7 @@ def shodan():
         "AsyncRAT": [
             "product:AsyncRAT"
         ],
-        "DcRat": [
+        "DcRAT": [
             "product:DcRat"
         ],
         "BitRAT": [
@@ -383,7 +383,7 @@ def censys():
         "Neptune Loader": [
             "services.software.product:neptune-loader"
         ],
-        "Nimplant C2": [
+        "NimPlant C2": [
             "services.software.product:NimPlant"
         ],
         "Ares RAT C2": [
