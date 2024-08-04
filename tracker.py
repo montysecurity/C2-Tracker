@@ -238,7 +238,7 @@ def shodan():
         "MobSF": [
             "http.title:'Mobile Security Framework - MobSF'"
         ],
-        "Villian C2": [
+        "Villain C2": [
             "hash:856668804"
         ]
     }
