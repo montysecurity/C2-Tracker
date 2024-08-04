@@ -237,6 +237,9 @@ def shodan():
         ],
         "MobSF": [
             "http.title:'Mobile Security Framework - MobSF'"
+        ],
+        "Villian C2": [
+            "hash:856668804"
         ]
     }
 
@@ -382,6 +385,9 @@ def censys():
         ],
         "Ares RAT C2": [
             "services.software.product:'Ares RAT'"
+        ],
+        "Villian C2": [
+            "services.banner='whoami\\n'"
         ]
     }
     h = CensysHosts()
