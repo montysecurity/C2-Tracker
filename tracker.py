@@ -246,6 +246,9 @@ def shodan():
         ],
         "RedGuard C2": [
             "http.status:307 http:'307 Temporary Redirect Content-Type: text/html; charset=utf-8 Location: https://360.net'"
+        ],
+        "SpiceRAT": [
+            "http.headers_hash:1955818171 http.html_hash:114440660"
         ]
     }
 
