@@ -58,6 +58,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [Vshell](https://github.com/veo/vshell)
     - [Villain](https://github.com/t3l3machus/Villain)
     - [Nimplant C2](https://github.com/chvancooten/NimPlant)
+    - [RedGuard C2](https://github.com/wikiZ/RedGuard/tree/main)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)

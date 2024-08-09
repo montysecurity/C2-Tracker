@@ -243,6 +243,9 @@ def shodan():
         ],
         "SpyAgent": [
             "http.title:'SpY-Agent v1.2'"
+        ],
+        "RedGuard C2": [
+            "http.status:307 http:'307 Temporary Redirect Content-Type: text/html; charset=utf-8 Location: https://360.net'"
         ]
     }
 
