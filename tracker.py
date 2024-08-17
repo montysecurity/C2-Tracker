@@ -117,6 +117,10 @@ def shodan():
         "7777 Botnet": [
             "hash:1357418825"
         ],
+        # https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router
+        "63256 Botnet" : [
+            "hash:1771530908 port:63256"
+        ],
         "Quasar RAT": [
             "product:'Quasar RAT'"
         ],
