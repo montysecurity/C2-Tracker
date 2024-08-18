@@ -405,6 +405,10 @@ def censys():
         "SpyAgent": [
             "services.http.response.html_title:'SpY-Agent v1.2'",
             "services.software.product=`Spy-Agent`"
+        ],
+        # https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router
+        "63256 Botnet": [
+            "services.port:63256 and services.banner_hashes='sha256:13e9b4b65e60bd9c8e58232591012fa6e2240a7b348ccdd611490e17d00b25f6'"
         ]
     }
     h = CensysHosts()
