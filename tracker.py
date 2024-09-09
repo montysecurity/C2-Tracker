@@ -401,6 +401,12 @@ def censys():
         "SpyAgent": [
             "services.http.response.html_title:'SpY-Agent v1.2'",
             "services.software.product=`Spy-Agent`"
+        ],
+        "Dust RAT": [
+            "services.http.response.body:`Dust RAT v1.4.0`"
+        ],
+        "Pupy RAT": [
+            "services.software.product=`Pupy RAT`"
         ]
     }
     h = CensysHosts()

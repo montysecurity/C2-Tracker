@@ -12,6 +12,7 @@ Many of the queries have been sourced from other CTI researchers:
 - [Gi7W0rm](https://twitter.com/Gi7w0rm)
 - [Glacius_](https://twitter.com/Glacius_)
 - [corumir](https://github.com/corumir)
+- [salmanvsf](https://x.com/salmanvsf)
 
 Huge shoutout to them!
 
@@ -103,6 +104,8 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Netpune Loader
     - [SpyAgent](https://www.deepinstinct.com/blog/the-russian-spyagent-a-decade-later-and-rat-tools-remain-at-risk)
     - [SpiceRAT](https://hunt.io/blog/the-secret-ingredient-unearthing-suspected-spicerat-infrastructure-via-html-response)
+    - Dust RAT
+    - Pupy RAT
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
