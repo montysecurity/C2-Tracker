@@ -249,6 +249,9 @@ def shodan():
         ],
         "SpiceRAT": [
             "http.headers_hash:1955818171 http.html_hash:114440660"
+        ],
+        "Oyster C2": [
+            "http.html_hash:-51903740"
         ]
     }
 
