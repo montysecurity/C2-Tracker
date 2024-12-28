@@ -119,6 +119,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [BlackNET](https://github.com/suriya73/BlackNET)
     - Doxerina
     - Scarab
+    - [63256](https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router)
 
 ## Running Locally
 
