@@ -153,7 +153,7 @@ def shodan():
         "njRAT Trojan": [
             "product:'njRAT Trojan'"
         ],
-        "Remcos Pro RAT Trojan": [
+        "Remcos RAT": [
             "product:'Remcos Pro RAT Trojan'"
         ],
         "Poison Ivy Trojan": [
@@ -410,6 +410,13 @@ def censys():
         ],
         "Pupy RAT": [
             "services.software.product=`Pupy RAT`"
+        ],
+        "Remcos RAT": [
+            "services.software.product=Remcos"
+        ],
+        # https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router
+        "63256 Botnet": [
+            "services.port:63256 and services.banner_hashes='sha256:13e9b4b65e60bd9c8e58232591012fa6e2240a7b348ccdd611490e17d00b25f6'"
         ]
     }
     h = CensysHosts()
