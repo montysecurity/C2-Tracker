@@ -13,6 +13,7 @@ Many of the queries have been sourced from other CTI researchers:
 - [Glacius_](https://twitter.com/Glacius_)
 - [corumir](https://github.com/corumir)
 - [salmanvsf](https://x.com/salmanvsf)
+- [SecurityJosh](https://github.com/SecurityJosh)
 
 Huge shoutout to them!
 
@@ -144,3 +145,4 @@ I encourage opening an issue/PR if you know of any additional Shodan/Censys sear
 - [https://twitter.com/ViriBack/status/1713714868564394336](https://twitter.com/ViriBack/status/1713714868564394336)
 - [https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
 - [https://twitter.com/Glacius_/status/1731699013873799209](https://twitter.com/Glacius_/status/1731699013873799209)
+- [https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router](https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router)
