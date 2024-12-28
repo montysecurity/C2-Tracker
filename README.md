@@ -96,8 +96,6 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Atlandida Stealer
     - VenomRAT
     - Orcus RAT
-    - DcRAT
-    - BitRAT
     - BlackDolphin
     - Artemis RAT
     - Godzilla Loader
