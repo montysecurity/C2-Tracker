@@ -93,7 +93,8 @@ def shodan():
         ],
         "Collector Stealer": [
             'http.html:"Collector Stealer"',
-            'http.html:getmineteam'
+            'http.html:getmineteam',
+            'product:"Collector Stealer"'
         ],
         "Mystic Stealer": [
             "http.title:'Mystic Stealer'",
