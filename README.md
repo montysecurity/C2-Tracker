@@ -140,6 +140,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [63256](https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router)
     - Kaiji
     - MooBot
+    - Mozi
 
 ## Running Locally
 

@@ -253,6 +253,9 @@ def shodan():
         ],
         "Oyster C2": [
             "http.html_hash:-51903740"
+        ],
+        "Mozi Botnet": [
+            "http.html_hash:-1245370368"
         ]
     }
 
