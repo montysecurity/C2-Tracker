@@ -56,12 +56,12 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [Supershell](https://github.com/tdragon6/Supershell/tree/main)
     - Poseidon C2
     - Viper C2
-    - [UnamWebPanel](https://github.com/UnamSanctam/UnamWebPanel)
     - [Vshell](https://github.com/veo/vshell)
     - [Villain](https://github.com/t3l3machus/Villain)
     - [Nimplant C2](https://github.com/chvancooten/NimPlant)
     - [RedGuard C2](https://github.com/wikiZ/RedGuard/tree/main)
     - Oyster C2
+    - [byob C2](https://github.com/malwaredllc/byob)
 - Malware
     - AcidRain Stealer
     - Misha Stealer (AKA Grand Misha)
@@ -106,6 +106,23 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [SpiceRAT](https://hunt.io/blog/the-secret-ingredient-unearthing-suspected-spicerat-infrastructure-via-html-response)
     - Dust RAT
     - Pupy RAT
+    - Atomic Stealer
+    - Lumma Stealer
+    - Serpent Stealer
+    - Axile Stealer
+    - Vector Stealer
+    - Mint Stealer
+    - Z3us Stealer
+    - Rastro Stealer
+    - Darkeye Stealer
+    - Agniane Stealer
+    - Epsilon Stealer
+    - Bahamut Stealer
+    - [Unam Web Panel](https://github.com/UnamSanctam/UnamWebPanel) / SilentCryptoMiner
+    - Vidar Stealer
+    - Kraken RAT
+    - Bumblebee Loader
+    - Viper RAT
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
@@ -113,12 +130,16 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [BurpSuite](https://portswigger.net/burp)
     - [Hashcat](https://hashcat.net/hashcat/)
     - [MobSF](https://github.com/MobSF/Mobile-Security-Framework-MobSF)
+    - [EvilGoPhish](https://github.com/fin3ss3g0d/evilgophish)
+    - [EvilGinx](https://github.com/kgretzky/evilginx2)
 - Botnets
     - [7777](https://gi7w0rm.medium.com/the-curious-case-of-the-7777-botnet-86e3464c3ffd)
     - [BlackNET](https://github.com/suriya73/BlackNET)
     - Doxerina
     - Scarab
     - [63256](https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router)
+    - Kaiji
+    - MooBot
 
 ## Running Locally
 

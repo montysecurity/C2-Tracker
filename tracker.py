@@ -220,7 +220,7 @@ def shodan():
         "NetBus Trojan": [
             "product:'NetBus Trojan'"
         ],
-        "UnamWebPanel": [
+        "Unam Web Panel": [
             "html:unam_lib.js http.favicon.hash:-1278680098,-1531496738",
             "http.title:'Unam Web Panel &mdash; Login'"
         ],
@@ -342,7 +342,7 @@ def censys():
             "services.software.product:`Mythic`"
         ],
         "Vshell C2": [
-            "services.software.product=`Vshell`",
+            "services.software: (vendor: Vshell and product: Vshell)",
             "services.http.response.html_title:'Vshell - 登录'"
         ],
         "Hookbot": [
@@ -418,6 +418,84 @@ def censys():
         # https://www.team-cymru.com/post/botnet-7777-are-you-betting-on-a-compromised-router
         "63256 Botnet": [
             "services.port:63256 and services.banner_hashes='sha256:13e9b4b65e60bd9c8e58232591012fa6e2240a7b348ccdd611490e17d00b25f6'"
+        ],
+        "BYOB C2": [
+            "services.software.product:byob"
+        ],
+        "Meduza Stealer": [
+            "services.software.product:meduza-stealer"
+        ],
+        "Lumma Stealer": [
+            "services.software.product: lumma-stealer"
+        ],
+        "Bandit Stealer": [
+            "services.software.product: bandit-stealer"
+        ],
+        "Atomic Stealer": [
+            "services.software.product: atomic-stealer"
+        ],
+        "Serpent Stealer": [
+            "services.software.product: serpent-stealer"
+        ],
+        "Axile Stealer": [
+            "services.software.product: axile-stealer"
+        ],
+        "Vector Stealer": [
+            "services.software.product: vector-stealer"
+        ],
+        "Mint Stealer": [
+            "services.software.product: mint-stealer"
+        ],
+        "Z3us Stealer": [
+            "services.software.product: z3us-stealer"
+        ],
+        "Rastro Stealer": [
+            "services.software.product: rastro-stealer"
+        ],
+        "Darkeye Stealer": [
+            "services.software.product: darkeye-stealer"
+        ],
+        "Agniane Stealer": [
+            "services.software.product: agniane-stealer"
+        ],
+        "Epsilon Stealer": [
+            "services.software.product: epsilon-stealer"
+        ],
+        "Kaiji Botnet": [
+            "services.software.product: Kaiji"
+        ],
+        "MooBot Botnet": [
+            "services.software.product: MooBot"
+        ],
+        "Bahamut Stealer": [
+            "services.software.product: Bahamut"
+        ],
+        "Unam Web Panel": [
+            "services.software.product: UnamWebPanel"
+        ],
+        "Vidar Stealer": [
+            "services.software.product: Vidar"
+        ],
+        "BlackNet Botnet": [
+            "services.software.product:'BlackNET RAT'"
+        ],
+        "Kraken RAT": [
+            "services.software.product: kraken-rat"
+        ],
+        "Bumblebee Loader": [
+            "services.software.product: Bumblebee"
+        ],
+        "Viper RAT": [
+            "services.software.product: Viper"
+        ],
+        "EvilGinx": [
+            "services.software.product: EvilGinx"
+        ],
+        "GoPhish": [
+            "services.software.product: GoPhish"
+        ],
+        "EvilGoPhish": [
+            "services.software.product: EvilGoPhish"
         ]
     }
     h = CensysHosts()
