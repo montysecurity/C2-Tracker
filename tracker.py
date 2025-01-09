@@ -256,6 +256,9 @@ def shodan():
         ],
         "Mozi Botnet": [
             "http.html_hash:-1245370368"
+        ],
+        "Prysmax Stealer": [
+            "http.title:'Prysmax Stealer'"
         ]
     }
 
