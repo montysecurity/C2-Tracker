@@ -259,6 +259,9 @@ def shodan():
         ],
         "Prysmax Stealer": [
             "http.title:'Prysmax Stealer'"
+        ],
+        "Spectre Stealer": [
+            "http.title:'Spectre Stealer - Login'"
         ]
     }
 

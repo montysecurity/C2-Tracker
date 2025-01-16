@@ -123,6 +123,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Kraken RAT
     - Bumblebee Loader
     - Viper RAT
+    - Spectre Stealer
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)
