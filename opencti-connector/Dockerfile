@@ -8,4 +8,7 @@ RUN apk --no-cache add git build-base libmagic libffi-dev libxml2-dev libxslt-de
 RUN pip install --upgrade pip
 RUN pip install requests pycti
 
-ENTRYPOINT [ "python", "connector.py" ]
+# Expose and run entrypoint
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
