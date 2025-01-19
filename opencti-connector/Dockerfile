@@ -5,8 +5,8 @@ COPY src /opt/opencti-c2-tracker
 WORKDIR /opt/opencti-c2-tracker
 
 RUN apk --no-cache add git build-base libmagic libffi-dev libxml2-dev libxslt-dev
-RUN pip install --upgrade pip
-RUN pip install requests pycti
+RUN pip install requests==2.32.3
+RUN pip install pycti==6.3.13
 
 # Expose and run entrypoint
 COPY entrypoint.sh /

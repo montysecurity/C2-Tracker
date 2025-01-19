@@ -7,12 +7,6 @@ from datetime import date
 from stix2 import TLP_WHITE
 from time import sleep
 
-api_url = os.getenv("OPENCTI_URL")
-api_token = os.getenv("OPENCTI_C2TRACKER_TOKEN")
-print(f"[+] API Token: {api_token}")
-print(f"[+] API URL: {api_url}")
-opencti_api_client = OpenCTIApiClient(api_url, api_token)
-
 def get_current_c2_tracker_ips():
     print("[+] Getting Current IOCs...")
     all_ips = set()
@@ -255,6 +249,12 @@ def create_relationships(indicators, tools):
                         opencti_api_client.stix_core_relationship.add_label(id=relationship["id"], label_id=label["id"])
 
 def main():
+    api_url = os.getenv("OPENCTI_URL")
+    api_token = os.getenv("OPENCTI_C2TRACKER_TOKEN")
+    print(f"[+] API Token: {api_token}")
+    print(f"[+] API URL: {api_url}")
+    global opencti_api_client
+    opencti_api_client = OpenCTIApiClient(api_url, api_token)
     current_c2_tracker_ips = get_current_c2_tracker_ips()
     current_opencti_c2_tracker_indicators = opencti_indicator_loop(current_c2_tracker_ips, delete_old_iocs=False)
     opencti_indicator_loop(current_c2_tracker_ips, delete_old_iocs=True)
