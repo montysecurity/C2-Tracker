@@ -19,7 +19,7 @@ Huge shoutout to them!
 
 Thanks to [BertJanCyber](https://twitter.com/BertJanCyber) for creating the [KQL query](https://github.com/Bert-JanP/Hunting-Queries-Detection-Rules/blob/main/Threat%20Hunting/TI%20Feed%20-%20MontySecurity%20C2%20Tracker%20All%20IPs.md) for ingesting this feed
 
-And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Live](https://github.com/YoNixNeXRo/C2Live) in order to visualize the data
+And finally, thanks to [Y_nexro](https://twitter.com/Y_NeXRo) for creating [C2Live](https://github.com/YoNixNeXRo/C2Live) in order to visualize the data and the website version at [c2tracker.com](https://c2tracker.com)
 
 ## Usage
 
