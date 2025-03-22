@@ -124,6 +124,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - Bumblebee Loader
     - Viper RAT
     - Spectre Stealer
+    - Sectop RAT
 - Tools
     - [XMRig Monero Cryptominer](https://xmrig.com/)
     - [GoPhish](https://getgophish.com/)

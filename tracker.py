@@ -262,6 +262,10 @@ def shodan():
         ],
         "Spectre Stealer": [
             "http.title:'Spectre Stealer - Login'"
+        ],
+        # Credit: @phage_nz
+        "Sectop RAT": [
+            "http.headers_hash:-1731927497 port:9000,15647"
         ]
     }
 
@@ -505,6 +509,11 @@ def censys():
         ],
         "EvilGoPhish": [
             "services.software.product: EvilGoPhish"
+        ],
+        # Credit: @phage_nz
+        "Sectop RAT": [
+            "services.software.vendor=SectopRAT",
+            'services.banner_hashes="sha256:e09e1b5b03b592b8e626296e1a7baa004cac61aaf0a75658af744f9e1d7853fc" and (services.port:9000 or services.port:15647)'
         ]
     }
     h = CensysHosts()
