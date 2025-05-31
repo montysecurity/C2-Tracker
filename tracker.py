@@ -303,12 +303,12 @@ def censys():
             "services.http.response.headers: (key: `Server` and value.headers: `RisePro`)",
             "services.software.product:RisePro"
         ],
-        "Viper C2": [
-            "services.software.product=`VIPER`"
-        ],
-        "Poseidon C2": [
-            "services.http.response.html_title=`POSEIDON`"
-        ],
+        #"Viper C2": [
+        #    "services.software.product=`VIPER`"
+        #],
+        #"Poseidon C2": [
+        #    "services.http.response.html_title=`POSEIDON`"
+        #],
         "Scarab Botnet": [
             "services.software.product=`Scarab`"
         ],

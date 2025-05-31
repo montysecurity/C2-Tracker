@@ -54,8 +54,6 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
     - [Hak5 Cloud C2](https://shop.hak5.org/products/c2)
     - [Pantegana](https://github.com/cassanof/pantegana)
     - [Supershell](https://github.com/tdragon6/Supershell/tree/main)
-    - Poseidon C2
-    - Viper C2
     - [Vshell](https://github.com/veo/vshell)
     - [Villain](https://github.com/t3l3machus/Villain)
     - [Nimplant C2](https://github.com/chvancooten/NimPlant)
