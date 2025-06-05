@@ -298,6 +298,7 @@ def shodan():
         all_ips_file.write(f"{ip}\n")
 
 def censys():
+    # This function is disabled until I get new queries after Censys changed their search syntax
     queries = {
         "RisePro Stealer": [
             "services.http.response.headers: (key: `Server` and value.headers: `RisePro`)",
@@ -559,7 +560,7 @@ def deconflict():
 def main():
     load_dotenv()
     shodan()
-    censys()
+    #censys()
     deconflict()
 
 if __name__ == '__main__':
