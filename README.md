@@ -1,6 +1,6 @@
 # C2 Tracker
 
-C2 Tracker is a free-to-use-community-driven IOC feed that uses [Shodan](https://www.shodan.io/) and [Censys](https://search.censys.io/) searches to collect IP addresses of known malware/botnet/C2 infrastructure.
+C2 Tracker is a free-to-use-community-driven IOC feed that uses [Shodan](https://www.shodan.io/) ~~and [Censys](https://search.censys.io/)~~ searches to collect IP addresses of known malware/botnet/C2 infrastructure.
 
 ## Honorable Mentions
 
