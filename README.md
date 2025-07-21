@@ -33,6 +33,7 @@ The most recent collection will be stored in `data/`. The IPs are seperated by t
 ### Investigations/Historical Analysis
 
 - The repo, by its nature, has version control. This means you can search the history of the repo for when an IP was present in the results. I have used one of my other public tools, [GitHub Repo OSINT Tool](https://github.com/montysecurity/GROT), for this purpose.
+- There is an OpenCTI connector for this project which can be found [here](https://github.com/OpenCTI-Platform/connectors/tree/master/external-import/montysecurity-c2-tracker) - not recommended for production environments
 
 ## What do I track?
 
